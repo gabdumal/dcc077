@@ -10,13 +10,18 @@ O sistema de urnas eletrônicas exige uma operação muito complexa para envio d
 
 erDiagram
 
+  STATE {
+    STRING name
+  }
+  STATE ||--|{ CITY : "contains"
+
   CITY {
     STRING name
-    STRING state
   }
   CITY ||--|{ MACHINE : "has in storage"
 
   CITIZEN {
+    STRING cpf_number
     STRING name
     %% May be "MASCULINE", "FEMININE", or "NEUTRAL"
     STRING gender
@@ -27,6 +32,7 @@ erDiagram
   CITIZEN ||--o| ATTENDED : ""
 
   ATTENDED {
+    LOCAL_DATETIME time
   }
   ATTENDED }o--|| POLLING_STATION : ""
 
