@@ -18,7 +18,6 @@ erDiagram
   CITY {
     STRING name
   }
-  CITY ||--|{ MACHINE : "has in storage"
 
   CITIZEN {
     STRING cpf_number
@@ -48,6 +47,7 @@ erDiagram
   USE {
     LOCAL_DATETIME start_time
     LOCAL_DATETIME end_time
+    String status
   }
   POLLING_STATION ||--|{ USE : "uses"
   MACHINE ||--o| USE : "is used by"
