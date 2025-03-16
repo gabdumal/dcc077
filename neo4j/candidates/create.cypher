@@ -2,9 +2,6 @@
 MATCH (cz:Citizen {cpf_number: "00000000049"})
 MERGE (cd:Candidate {party: "10"})-[:IS]->(cz);
 
-MATCH (cz:Citizen {cpf_number: "00000000050"})
-MERGE (cd:Candidate {party: "20"})-[:IS]->(cz);
-
 MATCH (cz:Citizen {cpf_number: "00000000098"})
 MERGE (cd:Candidate {party: "30"})-[:IS]->(cz);
 
