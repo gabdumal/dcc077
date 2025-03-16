@@ -133,3 +133,7 @@ MERGE (p16)-
       [:USES {start_time: datetime("2022-10-02T08:00:00"),
               end_time: datetime("2022-10-02T17:00:00"), status: "active"}]->
       (m18:Machine {serial_number: "AAA018"});
+
+// Unused machines
+MERGE (m19:Machine {serial_number: "AAA019"});
+MERGE (m20:Machine {serial_number: "AAA020"});

@@ -2,6 +2,12 @@
 MATCH (c:City)
 RETURN c.name AS name;
 
+// Complete Cities
+MATCH (c:City)
+OPTIONAL MATCH (s:State)-[:CONTAINS]->(c)
+WITH c, {name: s.name} AS state
+RETURN c.name AS name, state;
+
 // Cities with Polling Stations
 MATCH (c:City)-[:CONTAINS]->(p:PollingStation)
 WITH c.name AS city, COLLECT(p.name) AS pollingStations
