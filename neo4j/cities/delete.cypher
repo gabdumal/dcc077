@@ -1,0 +1,2 @@
+MATCH (c:City)
+DETACH DELETE c;
