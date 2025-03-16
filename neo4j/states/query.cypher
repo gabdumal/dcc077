@@ -30,8 +30,8 @@ RETURN state AS name, cities;
 
 // States with Cities and born Citizens
 MATCH (s:State)-[:CONTAINS]->(c:City)<-[:BORN_IN]-(cz:Citizen)
-WITH s.name AS state, c.name AS cities, collect(cz.name) AS citizens
-RETURN state, collect({name: cities, citizens: citizens}) AS cities;
+WITH s.name AS state, c.name AS cities, COLLECT(cz.name) AS citizens
+RETURN state, COLLECT({name: cities, citizens: citizens}) AS cities;
 
 // States with Cities, Polling Stations and registered Citizens
 MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-

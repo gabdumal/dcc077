@@ -147,3 +147,153 @@ MERGE (cz49:Citizen {cpf_number: "00000000049", name: "Márcio Falcão",
 
 MERGE (cz50:Citizen {cpf_number: "00000000050", name: "Simone Câmara",
                      gender: "feminine", birth_date: datetime("1987-02-18")});
+
+MERGE (cz51:Citizen {cpf_number: "00000000051", name: "Ana Silva",
+                     gender: "feminine", birth_date: datetime("1985-03-22")});
+
+MERGE (cz52:Citizen {cpf_number: "00000000052", name: "Carlos Oliveira",
+                     gender: "masculine", birth_date: datetime("1990-07-15")});
+
+MERGE (cz53:Citizen {cpf_number: "00000000053", name: "Mariana Costa",
+                     gender: "feminine", birth_date: datetime("1988-11-30")});
+
+MERGE (cz54:Citizen {cpf_number: "00000000054", name: "Pedro Santos",
+                     gender: "masculine", birth_date: datetime("1992-05-10")});
+
+MERGE (cz55:Citizen {cpf_number: "00000000055", name: "Fernanda Lima",
+                     gender: "feminine", birth_date: datetime("1986-09-25")});
+
+MERGE (cz56:Citizen {cpf_number: "00000000056", name: "Ricardo Almeida",
+                     gender: "masculine", birth_date: datetime("1991-12-05")});
+
+MERGE (cz57:Citizen {cpf_number: "00000000057", name: "Juliana Ribeiro",
+                     gender: "feminine", birth_date: datetime("1989-04-18")});
+
+MERGE (cz58:Citizen {cpf_number: "00000000058", name: "Lucas Carvalho",
+                     gender: "masculine", birth_date: datetime("1993-08-12")});
+
+MERGE (cz59:Citizen {cpf_number: "00000000059", name: "Patrícia Gomes",
+                     gender: "feminine", birth_date: datetime("1987-01-20")});
+
+MERGE (cz60:Citizen {cpf_number: "00000000060", name: "Gustavo Martins",
+                     gender: "masculine", birth_date: datetime("1994-06-28")});
+
+MERGE (cz61:Citizen {cpf_number: "00000000061", name: "Tatiane Rocha",
+                     gender: "feminine", birth_date: datetime("1984-10-14")});
+
+MERGE (cz62:Citizen {cpf_number: "00000000062", name: "Roberto Nunes",
+                     gender: "masculine", birth_date: datetime("1995-02-09")});
+
+MERGE (cz63:Citizen {cpf_number: "00000000063", name: "Camila Fernandes",
+                     gender: "feminine", birth_date: datetime("1983-07-03")});
+
+MERGE (cz64:Citizen {cpf_number: "00000000064", name: "Daniel Souza",
+                     gender: "masculine", birth_date: datetime("1996-11-22")});
+
+MERGE (cz65:Citizen {cpf_number: "00000000065", name: "Aline Barbosa",
+                     gender: "neutral", birth_date: datetime("1982-04-17")});
+
+MERGE (cz66:Citizen {cpf_number: "00000000066", name: "Marcos Pereira",
+                     gender: "masculine", birth_date: datetime("1997-09-08")});
+
+MERGE (cz67:Citizen {cpf_number: "00000000067", name: "Isabela Castro",
+                     gender: "feminine", birth_date: datetime("1981-12-01")});
+
+MERGE (cz68:Citizen {cpf_number: "00000000068", name: "Felipe Mendes",
+                     gender: "masculine", birth_date: datetime("1998-03-26")});
+
+MERGE (cz69:Citizen {cpf_number: "00000000069", name: "Vanessa Dias",
+                     gender: "feminine", birth_date: datetime("1980-06-19")});
+
+MERGE (cz70:Citizen {cpf_number: "00000000070", name: "Rafael Cardoso",
+                     gender: "masculine", birth_date: datetime("1999-08-11")});
+
+MERGE (cz71:Citizen {cpf_number: "00000000071", name: "Larissa Teixeira",
+                     gender: "feminine", birth_date: datetime("1979-05-24")});
+
+MERGE (cz72:Citizen {cpf_number: "00000000072", name: "Bruno Correia",
+                     gender: "masculine", birth_date: datetime("2000-01-13")});
+
+MERGE (cz73:Citizen {cpf_number: "00000000073", name: "Clara Monteiro",
+                     gender: "feminine", birth_date: datetime("1978-10-07")});
+
+MERGE (cz74:Citizen {cpf_number: "00000000074", name: "Eduardo Moreira",
+                     gender: "masculine", birth_date: datetime("2001-04-29")});
+
+MERGE (cz75:Citizen {cpf_number: "00000000075", name: "Gabriela Lopes",
+                     gender: "feminine", birth_date: datetime("1977-09-16")});
+
+MERGE (cz76:Citizen {cpf_number: "00000000076", name: "André Vieira",
+                     gender: "masculine", birth_date: datetime("2002-07-02")});
+
+MERGE (cz77:Citizen {cpf_number: "00000000077", name: "Beatriz Neves",
+                     gender: "feminine", birth_date: datetime("1976-02-28")});
+
+MERGE (cz78:Citizen {cpf_number: "00000000078", name: "Thiago Machado",
+                     gender: "masculine", birth_date: datetime("2003-12-15")});
+
+MERGE (cz79:Citizen {cpf_number: "00000000079", name: "Laura Freitas",
+                     gender: "feminine", birth_date: datetime("1975-08-09")});
+
+MERGE (cz80:Citizen {cpf_number: "00000000080", name: "Diego Araújo",
+                     gender: "masculine", birth_date: datetime("2004-05-21")});
+
+MERGE (cz81:Citizen {cpf_number: "00000000081", name: "Carolina Pires",
+                     gender: "feminine", birth_date: datetime("1974-03-14")});
+
+MERGE (cz82:Citizen {cpf_number: "00000000082", name: "Paulo Cunha",
+                     gender: "masculine", birth_date: datetime("2005-10-30")});
+
+MERGE (cz83:Citizen {cpf_number: "00000000083", name: "Sara Marques",
+                     gender: "feminine", birth_date: datetime("1973-01-25")});
+
+MERGE (cz84:Citizen {cpf_number: "00000000084", name: "Marcelo Fonseca",
+                     gender: "masculine", birth_date: datetime("2005-06-18")});
+
+MERGE (cz85:Citizen {cpf_number: "00000000085", name: "Helena Barros",
+                     gender: "feminine", birth_date: datetime("1972-11-12")});
+
+MERGE (cz86:Citizen {cpf_number: "00000000086", name: "Leandro Tavares",
+                     gender: "masculine", birth_date: datetime("2005-09-05")});
+
+MERGE (cz87:Citizen {cpf_number: "00000000087", name: "Renata Miranda",
+                     gender: "feminine", birth_date: datetime("1971-04-27")});
+
+MERGE (cz88:Citizen {cpf_number: "00000000088", name: "Vinícius Xavier",
+                     gender: "masculine", birth_date: datetime("2005-02-19")});
+
+MERGE (cz89:Citizen {cpf_number: "00000000089", name: "Amanda Brito",
+                     gender: "feminine", birth_date: datetime("1970-07-22")});
+
+MERGE (cz90:Citizen {cpf_number: "00000000090", name: "Rodrigo Peixoto",
+                     gender: "masculine", birth_date: datetime("2005-12-08")});
+
+MERGE (cz91:Citizen {cpf_number: "00000000091", name: "Natália Andrade",
+                     gender: "feminine", birth_date: datetime("1969-05-31")});
+
+MERGE (cz92:Citizen {cpf_number: "00000000092", name: "Alexandre Campos",
+                     gender: "masculine", birth_date: datetime("2000-08-14")});
+
+MERGE (cz93:Citizen {cpf_number: "00000000093", name: "Bianca Rezende",
+                     gender: "feminine", birth_date: datetime("1968-10-03")});
+
+MERGE (cz94:Citizen {cpf_number: "00000000094", name: "Igor Dantas",
+                     gender: "masculine", birth_date: datetime("2001-03-26")});
+
+MERGE (cz95:Citizen {cpf_number: "00000000095", name: "Luana Moura",
+                     gender: "feminine", birth_date: datetime("1967-12-17")});
+
+MERGE (cz96:Citizen {cpf_number: "00000000096", name: "Hugo Bezerra",
+                     gender: "masculine", birth_date: datetime("2002-07-09")});
+
+MERGE (cz97:Citizen {cpf_number: "00000000097", name: "Yasmin Vasconcelos",
+                     gender: "feminine", birth_date: datetime("1966-09-28")});
+
+MERGE (cz98:Citizen {cpf_number: "00000000098", name: "Cauê Guimarães",
+                     gender: "neutral", birth_date: datetime("2003-01-20")});
+
+MERGE (cz99:Citizen {cpf_number: "00000000099", name: "Letícia Duarte",
+                     gender: "feminine", birth_date: datetime("1965-04-11")});
+
+MERGE (cz100:Citizen {cpf_number: "00000000100", name: "Arthur Siqueira",
+                      gender: "masculine", birth_date: datetime("2004-06-05")});
