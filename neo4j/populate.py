@@ -9,7 +9,8 @@ def read_cypher_file(file_path):
         return file.read()
 
 # Read and combine Cypher files
-queries = read_cypher_file("constraints.cypher")
+queries = read_cypher_file("delete.cypher")
+queries += read_cypher_file("constraints.cypher")
 queries += read_cypher_file("states/create.cypher")
 queries += read_cypher_file("cities/create.cypher")
 queries += read_cypher_file("cities/link.cypher")
