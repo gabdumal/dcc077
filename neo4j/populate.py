@@ -15,6 +15,9 @@ queries += read_cypher_file("cities/create.cypher")
 queries += read_cypher_file("cities/link.cypher")
 queries += read_cypher_file("polling_stations/create.cypher")
 queries += read_cypher_file("machines/create.cypher")
+queries += read_cypher_file("citizens/create.cypher")
+queries += read_cypher_file("citizens/link_to_city.cypher")
+queries += read_cypher_file("citizens/link_to_polling_station.cypher")
 
 # Execute the combined queries
 with driver.session() as session:

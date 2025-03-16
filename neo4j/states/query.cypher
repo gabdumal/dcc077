@@ -27,3 +27,28 @@ WITH state, city,
      COLLECT({name: polling_station, machines: machines}) AS polling_stations
 WITH state, COLLECT({name: city, polling_stations: polling_stations}) AS cities
 RETURN state AS name, cities;
+
+// States with Cities and born Citizens
+MATCH (s:State)-[:CONTAINS]->(c:City)<-[:BORN_IN]-(cz:Citizen)
+WITH s.name AS state, c.name AS cities, collect(cz.name) AS citizens
+RETURN state, collect({name: cities, citizens: citizens}) AS cities;
+
+// States with Cities, Polling Stations and registered Citizens
+MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
+      [r:REGISTERED_IN]-(cz:Citizen)
+WITH s.name AS state, c.name AS cities, p.name AS polling_station,
+     COLLECT(cz.name) AS citizens
+WITH state, cities,
+     COLLECT({name: polling_station, citizens: citizens}) AS polling_stations
+RETURN state,
+       COLLECT({name: cities, polling_stations: polling_stations}) AS cities;
+
+// States with Cities, Polling Stations and registered Citizens
+MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
+      [r:REGISTERED_IN]-(cz:Citizen)
+WITH s.name AS state, c.name AS cities, p.name AS polling_station,
+     COLLECT(cz.name) AS citizens
+WITH state, cities,
+     COLLECT({name: polling_station, citizens: citizens}) AS polling_stations
+RETURN state,
+       COLLECT({name: cities, polling_stations: polling_stations}) AS cities;
