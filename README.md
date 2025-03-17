@@ -28,12 +28,12 @@ erDiagram
   }
   CITIZEN }o--|| CITY : "born in"
   CITIZEN }o--|| POLLING_STATION : "registered in"
-  CITIZEN ||--o| ATTENDED : ""
+  CITIZEN ||--o| ATTENDED_TO : ""
 
-  ATTENDED {
-    LOCAL_DATETIME time
+  ATTENDED_TO {
+    LOCAL_DATETIME timestamp
   }
-  ATTENDED }o--|| POLLING_STATION : ""
+  ATTENDED_TO }o--|| POLLING_STATION : ""
 
   POLLING_STATION {
     STRING name
