@@ -63,3 +63,25 @@ erDiagram
   CANDIDATE ||--o{ VOTE : "receives"
 
 ```
+
+## Neo4j
+
+Conecte-se a uma instância do Neo4j.
+
+Entre na pasta `neo4j`.
+
+```bash
+cd neo4j
+```
+
+Instale as dependências necessárias pelo `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
+Execute o script `populate.py` para popular o banco de dados:
+
+```bash
+python populate.py
+```
