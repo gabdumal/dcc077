@@ -138,8 +138,11 @@ RETURN s.name AS state, c.name AS city, candidates_with_percentages,
        registered, attended;
 
 // 7. Get statistics about candidates gender
-MATCH (cz:Citizen)<-[:IS]-(cd:Candidate)
-RETURN cz.gender AS gender, COUNT(cd) AS candidate_count ORDER BY gender;
+WITH ["masculine", "feminine", "neutral"] AS genders
+UNWIND genders AS gender
+OPTIONAL MATCH (cz:Citizen {gender: gender})<-[:IS]-(cd:Candidate)
+WITH gender, COUNT(cd) AS candidate_count
+RETURN gender, candidate_count ORDER BY gender;
 
 // 7.1. Get statistics about candidates age
 MATCH (cz:Citizen)<-[:IS]-(cd:Candidate)
@@ -162,9 +165,13 @@ RETURN bs.name AS state, bc.name AS city, COUNT(cd) AS candidate_count
        ORDER BY state, city;
 
 // 8. Get statistics about citizens gender by city in which they are registered
-MATCH (cz:Citizen)-[:REGISTERED_IN]->(p:PollingStation)<-[:CONTAINS]-(c:City)<-
-      [:CONTAINS]-(s:State)
-WITH s, c, cz.gender AS gender, COUNT(cz) AS citizen_count
+MATCH (s:State)-[:CONTAINS]->(c:City)
+WITH s, c, ["masculine", "feminine", "neutral"] AS genders
+UNWIND genders AS gender
+WITH s, c, gender
+OPTIONAL MATCH (cz:Citizen {gender: gender})-[:REGISTERED_IN]->
+               (p:PollingStation)<-[:CONTAINS]-(c)
+WITH s, c, gender, COUNT(cz) AS citizen_count
 WITH s, c, collect({gender: gender, citizen_count: citizen_count}) AS genders
 RETURN s.name AS state, c.name AS city, genders ORDER BY state, city;
 
@@ -172,17 +179,14 @@ RETURN s.name AS state, c.name AS city, genders ORDER BY state, city;
 MATCH (cz:Citizen)-[:REGISTERED_IN]->(p:PollingStation)<-[:CONTAINS]-(c:City)<-
       [:CONTAINS]-(s:State)
 WHERE cz.birth_date IS NOT NULL
-WITH s, c, cz, date().year - date(cz.birth_date).year AS age,
+WITH s, c, cz, date().year - date(cz.birth_date).year AS age
+WITH s, c, cz,
   CASE
-    WHEN date().year - date(cz.birth_date).year >= 0 AND
-         date().year - date(cz.birth_date).year < 18 THEN '0-17'
-    WHEN date().year - date(cz.birth_date).year >= 18 AND
-         date().year - date(cz.birth_date).year < 30 THEN '18-29'
-    WHEN date().year - date(cz.birth_date).year >= 30 AND
-         date().year - date(cz.birth_date).year < 40 THEN '30-39'
-    WHEN date().year - date(cz.birth_date).year >= 40 AND
-         date().year - date(cz.birth_date).year < 50 THEN '40-49'
-    WHEN date().year - date(cz.birth_date).year >= 50 THEN '50+'
+    WHEN age >= 0 AND age < 18 THEN '0-17'
+    WHEN age >= 18 AND age < 30 THEN '18-29'
+    WHEN age >= 30 AND age < 40 THEN '30-39'
+    WHEN age >= 40 AND age < 50 THEN '40-49'
+    WHEN age >= 50 THEN '50+'
     ELSE 'Unknown'
   END AS age_range
 WITH s, c, age_range, COUNT(cz) AS citizen_count
@@ -199,3 +203,52 @@ WITH s, c,
      collect({state: bs.name, city: bc.name, citizen_count: citizen_count})
      AS cities_of_birth
 RETURN s.name AS state, c.name AS city, cities_of_birth ORDER BY state, city;
+
+// 9. Get average age of citizens by city in which they are registered
+MATCH (cz:Citizen)-[:REGISTERED_IN]->(p:PollingStation)<-[:CONTAINS]-(c:City)<-
+      [:CONTAINS]-(s:State)
+WHERE cz.birth_date IS NOT NULL
+WITH s, c, cz, date().year - date(cz.birth_date).year AS age
+WITH s, c, AVG(age) AS average_age
+RETURN s.name AS state, c.name AS city, average_age ORDER BY state, city;
+
+// 9.1 Get average age of citizens by city in which they are born
+MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz:Citizen)
+WHERE cz.birth_date IS NOT NULL
+WITH bs, bc, cz, date().year - date(cz.birth_date).year AS age
+WITH bs, bc, AVG(age) AS average_age
+RETURN bs.name AS state, bc.name AS city, average_age ORDER BY state, city;
+
+// 10. Get how many candidates of each gender are registered in each party
+MATCH (cd:Candidate)
+WHERE cd.party IS NOT NULL
+WITH DISTINCT cd.party AS party, ["masculine", "feminine", "neutral"] AS genders
+UNWIND genders AS gender
+WITH party, gender
+OPTIONAL MATCH (cd:Candidate {party: party})-[:IS]->
+               (cz:Citizen {gender: gender})
+WITH party, gender, COUNT(cd) AS candidate_count
+WITH party,
+     collect({gender: gender, candidate_count: candidate_count}) AS genders
+RETURN party, genders ORDER BY party;
+
+// 10.1. Get how many candidates of each age range are registered in each party
+MATCH (cd:Candidate)-[:IS]->(cz:Citizen)
+WHERE cd.party IS NOT NULL AND cz.birth_date IS NOT NULL
+WITH cz, cd.party AS party, date().year - date(cz.birth_date).year AS age
+WITH cz, party,
+  CASE
+    WHEN age >= 0 AND age < 18 THEN '0-17'
+    WHEN age >= 18 AND age < 30 THEN '18-29'
+    WHEN age >= 30 AND age < 40 THEN '30-39'
+    WHEN age >= 40 AND age < 50 THEN '40-49'
+    WHEN age >= 50 THEN '50+'
+    ELSE 'Unknown'
+  END AS age_range
+WITH party, age_range, COUNT(cz) AS candidate_count
+WITH party, collect({age_range: age_range, candidate_count: candidate_count})
+            AS age_ranges,
+     reduce(total = 0, a IN
+            collect({age_range: age_range, candidate_count: candidate_count}) |
+            total + a.candidate_count) AS total_candidates
+RETURN party, age_ranges, total_candidates ORDER BY party;
