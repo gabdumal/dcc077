@@ -1,5 +1,5 @@
 // 1. Candidates registered in each city and its information
-MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(ps:PollingStation)<-
+MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
       [:REGISTERED_IN]-(cz:Citizen)<-[:IS]-(cd:Candidate)
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz:Citizen)
 WITH s, c, COLLECT({party: cd.party, name: cz.name, gender: cz.gender,
@@ -8,27 +8,27 @@ WITH s, c, COLLECT({party: cd.party, name: cz.name, gender: cz.gender,
 RETURN s.name AS state, c.name AS city, candidates;
 
 // 2. Citizens who are registered in each polling station and their attendance if they have attended
-MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(ps:PollingStation)<-
+MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
       [:REGISTERED_IN]-(cz:Citizen)
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz)
-WITH s, c, ps, cz, bc, bs
-OPTIONAL MATCH (ps)<-[a:ATTENDED_TO]-(cz)
-WITH s, c,
-     ps, COLLECT({cpf_number: cz.cpf_number, name: cz.name,
-                  gender: cz.gender, age: datetime().year - cz.birth_date.year,
-                  born_in: {city: bc.name, state: bs.name}, attended:
+WITH s, c, p, cz, bc, bs
+OPTIONAL MATCH (p)<-[a:ATTENDED_TO]-(cz)
+WITH s,
+     c, p, COLLECT({cpf_number: cz.cpf_number, name: cz.name, gender: cz.gender,
+                    age: datetime().year - cz.birth_date.year,
+                    born_in: {city: bc.name, state: bs.name}, attended:
   CASE
     WHEN a IS NOT NULL THEN a.timestamp
     ELSE null
   END}) AS citizens
-RETURN s.name AS state, c.name AS city, ps.name AS polling_station, citizens;
+RETURN s.name AS state, c.name AS city, p.name AS polling_station, citizens;
 
 // 2.1. Citizens who are registered in each city and their attendance if they have attended
-MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(ps:PollingStation)<-
+MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
       [:REGISTERED_IN]-(cz:Citizen)
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz)
 WITH s, c, cz, bc, bs
-OPTIONAL MATCH (ps)<-[a:ATTENDED_TO]-(cz)
+OPTIONAL MATCH (p)<-[a:ATTENDED_TO]-(cz)
 WITH s, c, COLLECT({cpf_number: cz.cpf_number, name: cz.name, gender: cz.gender,
                     age: datetime().year - cz.birth_date.year,
                     born_in: {city: bc.name, state: bs.name}, attended:
@@ -39,14 +39,17 @@ WITH s, c, COLLECT({cpf_number: cz.cpf_number, name: cz.name, gender: cz.gender,
 RETURN s.name AS state, c.name AS city, citizens;
 
 // 3. Count how many citizens have registered in and attended to each polling station in each city
-MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(ps:PollingStation)<-
+MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
       [:REGISTERED_IN]-(cz:Citizen)
-WITH s, c, ps, COUNT(cz) AS registered
-OPTIONAL MATCH (ps)<-[a:ATTENDED_TO]-(cz)
-WITH s, c, ps, registered, COUNT(a) AS attended
-WITH s, c, COLLECT({name: ps.name, registered: registered, attended: attended})
-           AS polling_stations, SUM(registered) AS total_registered,
-     SUM(attended) AS total_attended
+WITH s, c, p, COUNT(cz) AS registered
+OPTIONAL MATCH (p)<-[a:ATTENDED_TO]-(cz)
+WITH s, c, p, registered, COUNT(a) AS attended
+MATCH (m:Machine)<-[:USES]-(p)
+WITH s, c, p, COLLECT({serial_number: m.serial_number}) AS machines, registered,
+     attended
+WITH s, c, COLLECT({name: p.name, registered: registered, attended: attended,
+                    machines: machines}) AS polling_stations,
+     SUM(registered) AS total_registered, SUM(attended) AS total_attended
 RETURN s.name AS state, c.name AS city, polling_stations, total_registered,
        total_attended;
 
