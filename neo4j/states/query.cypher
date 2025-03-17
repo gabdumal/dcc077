@@ -22,7 +22,7 @@ RETURN state AS name, cities;
 MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)-[r:USES]->
       (m:Machine)
 WITH s.name AS state, c.name AS city, p.name AS polling_station,
-     COLLECT(m.serial_number) AS machines
+     COLLECT({serial_number: m.serial_number}) AS machines
 WITH state, city,
      COLLECT({name: polling_station, machines: machines}) AS polling_stations
 WITH state, COLLECT({name: city, polling_stations: polling_stations}) AS cities

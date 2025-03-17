@@ -88,3 +88,13 @@ python populate.py
 ```
 
 As consultas estão definidas no arquivo [`queries.cypher`](neo4j/queries.cypher).
+
+## MongoDB
+
+Crie um novo banco de dados no MongoDB chamado `tse_online` com o usuário `admin` e senha `melancia`.
+
+Entre na pasta [`mongodb`](mongodb/).
+
+```bash
+cd mongodb
+```
