@@ -66,9 +66,10 @@ erDiagram
 
 ## Neo4j
 
-Conecte-se a uma instância do Neo4j.
+Crie um novo banco de dados no Neo4j com o usuário `neo4j` e senha `melancia`.
+Conecte-se a essa instância pelo endereço `bolt://localhost:7687`.
 
-Entre na pasta `neo4j`.
+Entre na pasta [`neo4j`](neo4j/).
 
 ```bash
 cd neo4j
@@ -80,8 +81,10 @@ Instale as dependências necessárias pelo `pip`:
 pip install -r requirements.txt
 ```
 
-Execute o script `populate.py` para popular o banco de dados:
+Execute o script [`populate.py`](neo4j/populate.py) para popular o banco de dados:
 
 ```bash
 python populate.py
 ```
+
+As consultas estão definidas no arquivo [`queries.cypher`](neo4j/queries.cypher).
