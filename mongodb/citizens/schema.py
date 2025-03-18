@@ -65,6 +65,16 @@ def run(db):
                             },
                         },
                     },
+                    "candidate": {
+                        "bsonType": "object",
+                        "description": "Candidate information.",
+                        "properties": {
+                            "party": {
+                                "bsonType": "string",
+                                "description": "Party number of the candidate.",
+                            },
+                        },
+                    },
                 },
             },
         },
