@@ -7,8 +7,12 @@ db.createCollection("states", {
   validator: {
     $jsonSchema: {
       bsonType: "object",
-      required: ["name", "cities"],
+      required: ["_id", "name", "cities"],
       properties: {
+        _id: {
+          bsonType: "objectId",
+          description: "Unique identifier for the state (required).",
+        },
         name: {
           bsonType: "string",
           description: "Name of the state (required).",
@@ -18,8 +22,12 @@ db.createCollection("states", {
           description: "List of cities in the state (required).",
           items: {
             bsonType: "object",
-            required: ["name", "polling_stations"],
+            required: ["_id", "name", "polling_stations"],
             properties: {
+              _id: {
+                bsonType: "objectId",
+                description: "Unique identifier for the city (required).",
+              },
               name: {
                 bsonType: "string",
                 description: "Name of the city (required).",
@@ -29,8 +37,13 @@ db.createCollection("states", {
                 description: "List of polling stations in the city (required).",
                 items: {
                   bsonType: "object",
-                  required: ["name", "machines"],
+                  required: ["_id", "name", "machines"],
                   properties: {
+                    _id: {
+                      bsonType: "objectId",
+                      description:
+                        "Unique identifier for the polling station (required).",
+                    },
                     name: {
                       bsonType: "string",
                       description: "Name of the polling station (required).",
@@ -41,8 +54,13 @@ db.createCollection("states", {
                         "List of machines in the polling station (required).",
                       items: {
                         bsonType: "object",
-                        required: ["serial_number"],
+                        required: ["_id", "serial_number"],
                         properties: {
+                          _id: {
+                            bsonType: "objectId",
+                            description:
+                              "Unique identifier for the machine (required).",
+                          },
                           serial_number: {
                             bsonType: "string",
                             description:

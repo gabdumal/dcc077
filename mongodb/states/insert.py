@@ -1,74 +1,90 @@
+from bson import ObjectId
+
+
 def run(db):
     db.states.insert_many(
         [
             {
+                "_id": ObjectId(),
                 "name": "Minas Gerais",
                 "cities": [
                     {
+                        "_id": ObjectId(),
                         "polling_stations": [
                             {
+                                "_id": ObjectId(),
                                 "name": "Centro de Votação Mangueira",
                                 "machines": [
-                                    {"serial_number": "AAA002"},
-                                    {"serial_number": "AAA001"},
+                                    {"_id": ObjectId(), "serial_number": "AAA002"},
+                                    {"_id": ObjectId(), "serial_number": "AAA001"},
                                 ],
                             },
                             {
+                                "_id": ObjectId(),
                                 "name": "Local de Voto Sabiá-do-Campo",
                                 "machines": [
-                                    {"serial_number": "AAA003"},
+                                    {"_id": ObjectId(), "serial_number": "AAA003"}
                                 ],
                             },
                         ],
                         "name": "Belo Horizonte",
                     },
                     {
+                        "_id": ObjectId(),
                         "polling_stations": [
                             {
+                                "_id": ObjectId(),
                                 "name": "Centro de Votação Arara-Azul",
                                 "machines": [
-                                    {"serial_number": "AAA006"},
+                                    {"_id": ObjectId(), "serial_number": "AAA006"}
                                 ],
                             },
                             {
+                                "_id": ObjectId(),
                                 "name": "Estação de Voto Cedro",
                                 "machines": [
-                                    {"serial_number": "AAA004"},
-                                    {"serial_number": "AAA005"},
+                                    {"_id": ObjectId(), "serial_number": "AAA004"},
+                                    {"_id": ObjectId(), "serial_number": "AAA005"},
                                 ],
                             },
                         ],
                         "name": "Uberlândia",
                     },
                     {
+                        "_id": ObjectId(),
                         "polling_stations": [
                             {
+                                "_id": ObjectId(),
                                 "name": "Local de Voto Pau-Brasil",
                                 "machines": [
-                                    {"serial_number": "AAA007"},
+                                    {"_id": ObjectId(), "serial_number": "AAA007"}
                                 ],
                             },
                             {
+                                "_id": ObjectId(),
                                 "name": "Estação de Voto Canário",
                                 "machines": [
-                                    {"serial_number": "AAA008"},
+                                    {"_id": ObjectId(), "serial_number": "AAA008"}
                                 ],
                             },
                         ],
                         "name": "Contagem",
                     },
                     {
+                        "_id": ObjectId(),
                         "polling_stations": [
                             {
+                                "_id": ObjectId(),
                                 "name": "Centro de Votação Ipê-Roxo",
                                 "machines": [
-                                    {"serial_number": "AAA009"},
+                                    {"_id": ObjectId(), "serial_number": "AAA009"}
                                 ],
                             },
                             {
+                                "_id": ObjectId(),
                                 "name": "Local de Voto Gralha-Azul",
                                 "machines": [
-                                    {"serial_number": "AAA010"},
+                                    {"_id": ObjectId(), "serial_number": "AAA010"}
                                 ],
                             },
                         ],
@@ -77,71 +93,84 @@ def run(db):
                 ],
             },
             {
+                "_id": ObjectId(),
                 "name": "Bahia",
                 "cities": [
                     {
+                        "_id": ObjectId(),
                         "polling_stations": [
                             {
+                                "_id": ObjectId(),
                                 "name": "Estação de Voto Farol da Barra",
                                 "machines": [
-                                    {"serial_number": "AAA011"},
+                                    {"_id": ObjectId(), "serial_number": "AAA011"}
                                 ],
                             },
                             {
+                                "_id": ObjectId(),
                                 "name": "Centro de Votação Sereia",
                                 "machines": [
-                                    {"serial_number": "AAA012"},
+                                    {"_id": ObjectId(), "serial_number": "AAA012"}
                                 ],
                             },
                         ],
                         "name": "Salvador",
                     },
                     {
+                        "_id": ObjectId(),
                         "polling_stations": [
                             {
+                                "_id": ObjectId(),
                                 "name": "Local de Voto Cajueiro",
                                 "machines": [
-                                    {"serial_number": "AAA013"},
+                                    {"_id": ObjectId(), "serial_number": "AAA013"}
                                 ],
                             },
                             {
+                                "_id": ObjectId(),
                                 "name": "Estação de Voto Beija-Flor-de-Papo-Branco",
                                 "machines": [
-                                    {"serial_number": "AAA014"},
+                                    {"_id": ObjectId(), "serial_number": "AAA014"}
                                 ],
                             },
                         ],
                         "name": "Feira de Santana",
                     },
                     {
+                        "_id": ObjectId(),
                         "polling_stations": [
                             {
+                                "_id": ObjectId(),
                                 "name": "Centro de Votação Pedra do Reino",
                                 "machines": [
-                                    {"serial_number": "AAA015"},
+                                    {"_id": ObjectId(), "serial_number": "AAA015"}
                                 ],
                             },
                             {
+                                "_id": ObjectId(),
                                 "name": "Local de Voto Andorinha",
                                 "machines": [
-                                    {"serial_number": "AAA016"},
+                                    {"_id": ObjectId(), "serial_number": "AAA016"}
                                 ],
                             },
                         ],
                         "name": "Vitória da Conquista",
                     },
                     {
+                        "_id": ObjectId(),
                         "polling_stations": [
                             {
+                                "_id": ObjectId(),
                                 "name": "Estação de Voto Jatobá",
                                 "machines": [
-                                    {"serial_number": "AAA017"},
+                                    {"_id": ObjectId(), "serial_number": "AAA017"}
                                 ],
                             },
                             {
+                                "_id": ObjectId(),
                                 "name": "Centro de Votação Colibri",
                                 "machines": [
-                                    {"serial_number": "AAA018"},
+                                    {"_id": ObjectId(), "serial_number": "AAA018"}
                                 ],
                             },
                         ],
