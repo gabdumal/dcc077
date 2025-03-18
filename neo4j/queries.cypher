@@ -7,7 +7,22 @@ WITH s, c, COLLECT({party: cd.party, name: cz.name, gender: cz.gender,
                     born_in: {city: bc.name, state: bs.name}}) AS candidates
 RETURN s.name AS state, c.name AS city, candidates;
 
-// 2. Citizens who are registered in each polling station and their attendance if they have attended
+// 2. Citizens who are registered in each city and their attendance if they have attended
+MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
+      [:REGISTERED_IN]-(cz:Citizen)
+MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz)
+WITH s, c, cz, bc, bs
+OPTIONAL MATCH (p)<-[a:ATTENDED_TO]-(cz)
+WITH s, c, COLLECT({cpf_number: cz.cpf_number, name: cz.name, gender: cz.gender,
+                    age: datetime().year - cz.birth_date.year,
+                    born_in: {city: bc.name, state: bs.name}, attended:
+  CASE
+    WHEN a IS NOT NULL THEN a.timestamp
+    ELSE null
+  END}) AS citizens
+RETURN s.name AS state, c.name AS city, citizens;
+
+// 2.1. Citizens who are registered in each polling station and their attendance if they have attended
 MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
       [:REGISTERED_IN]-(cz:Citizen)
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz)
@@ -22,21 +37,6 @@ WITH s,
     ELSE null
   END}) AS citizens
 RETURN s.name AS state, c.name AS city, p.name AS polling_station, citizens;
-
-// 2.1. Citizens who are registered in each city and their attendance if they have attended
-MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-
-      [:REGISTERED_IN]-(cz:Citizen)
-MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz)
-WITH s, c, cz, bc, bs
-OPTIONAL MATCH (p)<-[a:ATTENDED_TO]-(cz)
-WITH s, c, COLLECT({cpf_number: cz.cpf_number, name: cz.name, gender: cz.gender,
-                    age: datetime().year - cz.birth_date.year,
-                    born_in: {city: bc.name, state: bs.name}, attended:
-  CASE
-    WHEN a IS NOT NULL THEN a.timestamp
-    ELSE null
-  END}) AS citizens
-RETURN s.name AS state, c.name AS city, citizens;
 
 // 3. Count how many citizens have registered in and attended to each polling station in each city
 MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-

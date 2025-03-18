@@ -3,13 +3,8 @@
 // Select the database to use.
 use("tse_online");
 
-// 1. Candidates registered in each city and its information
+// 2. Citizens who are registered in each polling station and their attendance if they have attended
 db.citizens.aggregate([
-  {
-    $match: {
-      "candidate.party": { $exists: true },
-    },
-  },
   {
     $lookup: {
       from: "states",
@@ -81,13 +76,10 @@ db.citizens.aggregate([
         city: "$registered_in_info.city",
         state: "$registered_in_info.state",
       }, // Group by the city and state where the polling station is located
-      candidates: {
+      citizens: {
         $push: {
           name: "$name",
           cpf_number: "$cpf_number",
-          gender: "$gender",
-          birth_date: "$birth_date",
-          party: "$candidate.party",
           born_in: { city: "$born_in_info.city", state: "$born_in_info.state" },
           polling_station: "$registered_in_info.polling_station",
         },
@@ -99,7 +91,7 @@ db.citizens.aggregate([
       _id: 0,
       city: "$_id.city",
       state: "$_id.state",
-      candidates: 1,
+      citizens: 1,
     },
   },
 ]);
