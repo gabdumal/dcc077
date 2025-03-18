@@ -3,6 +3,27 @@ from datetime import datetime
 
 
 def run(db):
+    # Find machines
+    machine1 = db.machines.find_one({"serial_number": "AAA001"})
+    machine2 = db.machines.find_one({"serial_number": "AAA002"})
+    machine3 = db.machines.find_one({"serial_number": "AAA003"})
+    machine4 = db.machines.find_one({"serial_number": "AAA004"})
+    machine5 = db.machines.find_one({"serial_number": "AAA005"})
+    machine6 = db.machines.find_one({"serial_number": "AAA006"})
+    machine7 = db.machines.find_one({"serial_number": "AAA007"})
+    machine8 = db.machines.find_one({"serial_number": "AAA008"})
+    machine9 = db.machines.find_one({"serial_number": "AAA009"})
+    machine10 = db.machines.find_one({"serial_number": "AAA010"})
+    machine11 = db.machines.find_one({"serial_number": "AAA011"})
+    machine12 = db.machines.find_one({"serial_number": "AAA012"})
+    machine13 = db.machines.find_one({"serial_number": "AAA013"})
+    machine14 = db.machines.find_one({"serial_number": "AAA014"})
+    machine15 = db.machines.find_one({"serial_number": "AAA015"})
+    machine16 = db.machines.find_one({"serial_number": "AAA016"})
+    machine17 = db.machines.find_one({"serial_number": "AAA017"})
+    machine18 = db.machines.find_one({"serial_number": "AAA018"})
+
+    # Insert states
     db.states.insert_many(
         [
             {
@@ -11,7 +32,6 @@ def run(db):
                 "cities": [
                     {
                         "_id": ObjectId(),
-                        "name": "Belo Horizonte",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
@@ -19,23 +39,17 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 12, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 12, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA002",
-                                        },
+                                        "machine": machine2["_id"],
                                     },
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 12, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 12, 0),
                                         "status": "broken",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA001",
-                                        },
+                                        "machine": machine1["_id"],
                                     },
                                 ],
                             },
@@ -45,21 +59,18 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA003",
-                                        },
+                                        "machine": machine3["_id"],
                                     },
                                 ],
                             },
                         ],
+                        "name": "Belo Horizonte",
                     },
                     {
                         "_id": ObjectId(),
-                        "name": "Uberlândia",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
@@ -67,13 +78,10 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA006",
-                                        },
+                                        "machine": machine6["_id"],
                                     },
                                 ],
                             },
@@ -83,31 +91,25 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 10, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 10, 0),
                                         "status": "broken",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA004",
-                                        },
+                                        "machine": machine4["_id"],
                                     },
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 10, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 10, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA005",
-                                        },
+                                        "machine": machine5["_id"],
                                     },
                                 ],
                             },
                         ],
+                        "name": "Uberlândia",
                     },
                     {
                         "_id": ObjectId(),
-                        "name": "Contagem",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
@@ -115,13 +117,10 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA007",
-                                        },
+                                        "machine": machine7["_id"],
                                     },
                                 ],
                             },
@@ -131,21 +130,18 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA008",
-                                        },
+                                        "machine": machine8["_id"],
                                     },
                                 ],
                             },
                         ],
+                        "name": "Contagem",
                     },
                     {
                         "_id": ObjectId(),
-                        "name": "Juiz de Fora",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
@@ -153,13 +149,10 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA009",
-                                        },
+                                        "machine": machine9["_id"],
                                     },
                                 ],
                             },
@@ -169,17 +162,15 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA010",
-                                        },
+                                        "machine": machine10["_id"],
                                     },
                                 ],
                             },
                         ],
+                        "name": "Juiz de Fora",
                     },
                 ],
             },
@@ -189,7 +180,6 @@ def run(db):
                 "cities": [
                     {
                         "_id": ObjectId(),
-                        "name": "Salvador",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
@@ -197,13 +187,10 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA011",
-                                        },
+                                        "machine": machine11["_id"],
                                     },
                                 ],
                             },
@@ -213,21 +200,18 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA012",
-                                        },
+                                        "machine": machine12["_id"],
                                     },
                                 ],
                             },
                         ],
+                        "name": "Salvador",
                     },
                     {
                         "_id": ObjectId(),
-                        "name": "Feira de Santana",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
@@ -235,13 +219,10 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA013",
-                                        },
+                                        "machine": machine13["_id"],
                                     },
                                 ],
                             },
@@ -251,21 +232,18 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA014",
-                                        },
+                                        "machine": machine14["_id"],
                                     },
                                 ],
                             },
                         ],
+                        "name": "Feira de Santana",
                     },
                     {
                         "_id": ObjectId(),
-                        "name": "Vitória da Conquista",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
@@ -273,13 +251,10 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA015",
-                                        },
+                                        "machine": machine15["_id"],
                                     },
                                 ],
                             },
@@ -289,21 +264,18 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA016",
-                                        },
+                                        "machine": machine16["_id"],
                                     },
                                 ],
                             },
                         ],
+                        "name": "Vitória da Conquista",
                     },
                     {
                         "_id": ObjectId(),
-                        "name": "Camaçari",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
@@ -311,13 +283,10 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA017",
-                                        },
+                                        "machine": machine17["_id"],
                                     },
                                 ],
                             },
@@ -327,17 +296,15 @@ def run(db):
                                 "uses": [
                                     {
                                         "_id": ObjectId(),
-                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
-                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "start_time": datetime(2022, 10, 2, 8, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0),
                                         "status": "active",
-                                        "machine": {
-                                            "_id": ObjectId(),
-                                            "serial_number": "AAA018",
-                                        },
+                                        "machine": machine18["_id"],
                                     },
                                 ],
                             },
                         ],
+                        "name": "Camaçari",
                     },
                 ],
             },

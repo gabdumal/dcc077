@@ -11,8 +11,3 @@ db.states.createIndex(
   { _id: 1, "cities._id": 1, "cities.polling_stations.name": 1 },
   { unique: true }
 );
-
-db.states.createIndex(
-  { "cities.polling_stations.uses.machine.serial_number": 1 },
-  { unique: true }
-);

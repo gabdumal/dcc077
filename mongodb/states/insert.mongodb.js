@@ -3,6 +3,27 @@
 // Select the database to use.
 use("tse_online");
 
+// Find machines
+const machine1 = db.machines.findOne({ serial_number: "AAA001" });
+const machine2 = db.machines.findOne({ serial_number: "AAA002" });
+const machine3 = db.machines.findOne({ serial_number: "AAA003" });
+const machine4 = db.machines.findOne({ serial_number: "AAA004" });
+const machine5 = db.machines.findOne({ serial_number: "AAA005" });
+const machine6 = db.machines.findOne({ serial_number: "AAA006" });
+const machine7 = db.machines.findOne({ serial_number: "AAA007" });
+const machine8 = db.machines.findOne({ serial_number: "AAA008" });
+const machine9 = db.machines.findOne({ serial_number: "AAA009" });
+const machine10 = db.machines.findOne({ serial_number: "AAA010" });
+const machine11 = db.machines.findOne({ serial_number: "AAA011" });
+const machine12 = db.machines.findOne({ serial_number: "AAA012" });
+const machine13 = db.machines.findOne({ serial_number: "AAA013" });
+const machine14 = db.machines.findOne({ serial_number: "AAA014" });
+const machine15 = db.machines.findOne({ serial_number: "AAA015" });
+const machine16 = db.machines.findOne({ serial_number: "AAA016" });
+const machine17 = db.machines.findOne({ serial_number: "AAA017" });
+const machine18 = db.machines.findOne({ serial_number: "AAA018" });
+
+// Insert states
 db.states.insertMany([
   {
     _id: ObjectId(),
@@ -20,20 +41,14 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T12:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA002",
-                },
+                machine: machine2._id,
               },
               {
                 _id: ObjectId(),
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T12:00:00Z"),
                 status: "broken",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA001",
-                },
+                machine: machine1._id,
               },
             ],
           },
@@ -46,10 +61,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA003",
-                },
+                machine: machine3._id,
               },
             ],
           },
@@ -68,10 +80,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA006",
-                },
+                machine: machine6._id,
               },
             ],
           },
@@ -84,20 +93,14 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T10:00:00Z"),
                 status: "broken",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA004",
-                },
+                machine: machine4._id,
               },
               {
                 _id: ObjectId(),
                 start_time: new Date("2022-10-02T10:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA005",
-                },
+                machine: machine5._id,
               },
             ],
           },
@@ -116,10 +119,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA007",
-                },
+                machine: machine7._id,
               },
             ],
           },
@@ -132,10 +132,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA008",
-                },
+                machine: machine8._id,
               },
             ],
           },
@@ -154,10 +151,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA009",
-                },
+                machine: machine9._id,
               },
             ],
           },
@@ -170,10 +164,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA010",
-                },
+                machine: machine10._id,
               },
             ],
           },
@@ -198,10 +189,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA011",
-                },
+                machine: machine11._id,
               },
             ],
           },
@@ -214,10 +202,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA012",
-                },
+                machine: machine12._id,
               },
             ],
           },
@@ -236,10 +221,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA013",
-                },
+                machine: machine13._id,
               },
             ],
           },
@@ -252,10 +234,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA014",
-                },
+                machine: machine14._id,
               },
             ],
           },
@@ -274,10 +253,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA015",
-                },
+                machine: machine15._id,
               },
             ],
           },
@@ -290,10 +266,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA016",
-                },
+                machine: machine16._id,
               },
             ],
           },
@@ -312,10 +285,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA017",
-                },
+                machine: machine17._id,
               },
             ],
           },
@@ -328,10 +298,7 @@ db.states.insertMany([
                 start_time: new Date("2022-10-02T08:00:00Z"),
                 end_time: new Date("2022-10-02T17:00:00Z"),
                 status: "active",
-                machine: {
-                  _id: ObjectId(),
-                  serial_number: "AAA018",
-                },
+                machine: machine18._id,
               },
             ],
           },
