@@ -13,6 +13,6 @@ db.states.createIndex(
 );
 
 db.states.createIndex(
-  { "cities.polling_stations.machines.serial_number": 1 },
+  { "cities.polling_stations.uses.machine.serial_number": 1 },
   { unique: true }
 );

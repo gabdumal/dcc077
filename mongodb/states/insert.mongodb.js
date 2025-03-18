@@ -14,24 +14,42 @@ db.states.insertMany([
           {
             _id: ObjectId(),
             name: "Centro de Votação Mangueira",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA002",
+                start_time: new Date("2022-10-02T12:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA002",
+                },
               },
               {
                 _id: ObjectId(),
-                serial_number: "AAA001",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T12:00:00Z"),
+                status: "broken",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA001",
+                },
               },
             ],
           },
           {
             _id: ObjectId(),
             name: "Local de Voto Sabiá-do-Campo",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA003",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA003",
+                },
               },
             ],
           },
@@ -44,24 +62,42 @@ db.states.insertMany([
           {
             _id: ObjectId(),
             name: "Centro de Votação Arara-Azul",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA006",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA006",
+                },
               },
             ],
           },
           {
             _id: ObjectId(),
             name: "Estação de Voto Cedro",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA004",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T10:00:00Z"),
+                status: "broken",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA004",
+                },
               },
               {
                 _id: ObjectId(),
-                serial_number: "AAA005",
+                start_time: new Date("2022-10-02T10:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA005",
+                },
               },
             ],
           },
@@ -74,20 +110,32 @@ db.states.insertMany([
           {
             _id: ObjectId(),
             name: "Local de Voto Pau-Brasil",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA007",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA007",
+                },
               },
             ],
           },
           {
             _id: ObjectId(),
             name: "Estação de Voto Canário",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA008",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA008",
+                },
               },
             ],
           },
@@ -100,20 +148,32 @@ db.states.insertMany([
           {
             _id: ObjectId(),
             name: "Centro de Votação Ipê-Roxo",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA009",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA009",
+                },
               },
             ],
           },
           {
             _id: ObjectId(),
             name: "Local de Voto Gralha-Azul",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA010",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA010",
+                },
               },
             ],
           },
@@ -132,20 +192,32 @@ db.states.insertMany([
           {
             _id: ObjectId(),
             name: "Estação de Voto Farol da Barra",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA011",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA011",
+                },
               },
             ],
           },
           {
             _id: ObjectId(),
             name: "Centro de Votação Sereia",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA012",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA012",
+                },
               },
             ],
           },
@@ -158,20 +230,32 @@ db.states.insertMany([
           {
             _id: ObjectId(),
             name: "Local de Voto Cajueiro",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA013",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA013",
+                },
               },
             ],
           },
           {
             _id: ObjectId(),
             name: "Estação de Voto Beija-Flor-de-Papo-Branco",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA014",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA014",
+                },
               },
             ],
           },
@@ -184,20 +268,32 @@ db.states.insertMany([
           {
             _id: ObjectId(),
             name: "Centro de Votação Pedra do Reino",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA015",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA015",
+                },
               },
             ],
           },
           {
             _id: ObjectId(),
             name: "Local de Voto Andorinha",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA016",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA016",
+                },
               },
             ],
           },
@@ -210,20 +306,32 @@ db.states.insertMany([
           {
             _id: ObjectId(),
             name: "Estação de Voto Jatobá",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA017",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA017",
+                },
               },
             ],
           },
           {
             _id: ObjectId(),
             name: "Centro de Votação Colibri",
-            machines: [
+            uses: [
               {
                 _id: ObjectId(),
-                serial_number: "AAA018",
+                start_time: new Date("2022-10-02T08:00:00Z"),
+                end_time: new Date("2022-10-02T17:00:00Z"),
+                status: "active",
+                machine: {
+                  _id: ObjectId(),
+                  serial_number: "AAA018",
+                },
               },
             ],
           },

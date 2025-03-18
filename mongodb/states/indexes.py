@@ -6,5 +6,5 @@ def run(db):
         unique=True,
     )
     db.states.create_index(
-        [("cities.polling_stations.machines.serial_number", 1)], unique=True
+        [("cities.polling_stations.uses.machine.serial_number", 1)], unique=True
     )

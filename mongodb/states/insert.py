@@ -1,4 +1,5 @@
 from bson import ObjectId
+from datetime import datetime
 
 
 def run(db):
@@ -10,85 +11,175 @@ def run(db):
                 "cities": [
                     {
                         "_id": ObjectId(),
+                        "name": "Belo Horizonte",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
                                 "name": "Centro de Votação Mangueira",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA002"},
-                                    {"_id": ObjectId(), "serial_number": "AAA001"},
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 12, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA002",
+                                        },
+                                    },
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 12, 0, 0),
+                                        "status": "broken",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA001",
+                                        },
+                                    },
                                 ],
                             },
                             {
                                 "_id": ObjectId(),
                                 "name": "Local de Voto Sabiá-do-Campo",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA003"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA003",
+                                        },
+                                    },
                                 ],
                             },
                         ],
-                        "name": "Belo Horizonte",
                     },
                     {
                         "_id": ObjectId(),
+                        "name": "Uberlândia",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
                                 "name": "Centro de Votação Arara-Azul",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA006"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA006",
+                                        },
+                                    },
                                 ],
                             },
                             {
                                 "_id": ObjectId(),
                                 "name": "Estação de Voto Cedro",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA004"},
-                                    {"_id": ObjectId(), "serial_number": "AAA005"},
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 10, 0, 0),
+                                        "status": "broken",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA004",
+                                        },
+                                    },
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 10, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA005",
+                                        },
+                                    },
                                 ],
                             },
                         ],
-                        "name": "Uberlândia",
                     },
                     {
                         "_id": ObjectId(),
+                        "name": "Contagem",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
                                 "name": "Local de Voto Pau-Brasil",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA007"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA007",
+                                        },
+                                    },
                                 ],
                             },
                             {
                                 "_id": ObjectId(),
                                 "name": "Estação de Voto Canário",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA008"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA008",
+                                        },
+                                    },
                                 ],
                             },
                         ],
-                        "name": "Contagem",
                     },
                     {
                         "_id": ObjectId(),
+                        "name": "Juiz de Fora",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
                                 "name": "Centro de Votação Ipê-Roxo",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA009"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA009",
+                                        },
+                                    },
                                 ],
                             },
                             {
                                 "_id": ObjectId(),
                                 "name": "Local de Voto Gralha-Azul",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA010"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA010",
+                                        },
+                                    },
                                 ],
                             },
                         ],
-                        "name": "Juiz de Fora",
                     },
                 ],
             },
@@ -98,83 +189,155 @@ def run(db):
                 "cities": [
                     {
                         "_id": ObjectId(),
+                        "name": "Salvador",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
                                 "name": "Estação de Voto Farol da Barra",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA011"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA011",
+                                        },
+                                    },
                                 ],
                             },
                             {
                                 "_id": ObjectId(),
                                 "name": "Centro de Votação Sereia",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA012"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA012",
+                                        },
+                                    },
                                 ],
                             },
                         ],
-                        "name": "Salvador",
                     },
                     {
                         "_id": ObjectId(),
+                        "name": "Feira de Santana",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
                                 "name": "Local de Voto Cajueiro",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA013"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA013",
+                                        },
+                                    },
                                 ],
                             },
                             {
                                 "_id": ObjectId(),
                                 "name": "Estação de Voto Beija-Flor-de-Papo-Branco",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA014"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA014",
+                                        },
+                                    },
                                 ],
                             },
                         ],
-                        "name": "Feira de Santana",
                     },
                     {
                         "_id": ObjectId(),
+                        "name": "Vitória da Conquista",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
                                 "name": "Centro de Votação Pedra do Reino",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA015"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA015",
+                                        },
+                                    },
                                 ],
                             },
                             {
                                 "_id": ObjectId(),
                                 "name": "Local de Voto Andorinha",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA016"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA016",
+                                        },
+                                    },
                                 ],
                             },
                         ],
-                        "name": "Vitória da Conquista",
                     },
                     {
                         "_id": ObjectId(),
+                        "name": "Camaçari",
                         "polling_stations": [
                             {
                                 "_id": ObjectId(),
                                 "name": "Estação de Voto Jatobá",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA017"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA017",
+                                        },
+                                    },
                                 ],
                             },
                             {
                                 "_id": ObjectId(),
                                 "name": "Centro de Votação Colibri",
-                                "machines": [
-                                    {"_id": ObjectId(), "serial_number": "AAA018"}
+                                "uses": [
+                                    {
+                                        "_id": ObjectId(),
+                                        "start_time": datetime(2022, 10, 2, 8, 0, 0),
+                                        "end_time": datetime(2022, 10, 2, 17, 0, 0),
+                                        "status": "active",
+                                        "machine": {
+                                            "_id": ObjectId(),
+                                            "serial_number": "AAA018",
+                                        },
+                                    },
                                 ],
                             },
                         ],
-                        "name": "Camaçari",
                     },
                 ],
             },
