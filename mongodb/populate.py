@@ -13,5 +13,5 @@ db.drop_collection("machines")
 
 machines.run(db)
 states.run(db)
-# citizens.run(db)
-# candidates.run(db)
+citizens.run(db)
+candidates.run(db)
