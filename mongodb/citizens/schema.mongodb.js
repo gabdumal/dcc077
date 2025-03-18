@@ -8,6 +8,7 @@ db.createCollection("citizens", {
     $jsonSchema: {
       bsonType: "object",
       required: [
+        "_id",
         "cpf_number",
         "name",
         "gender",
@@ -16,6 +17,10 @@ db.createCollection("citizens", {
         "registered_in",
       ],
       properties: {
+        _id: {
+          bsonType: "objectId",
+          description: "Unique identifier for the citizen (required).",
+        },
         cpf_number: {
           bsonType: "string",
           description: "CPF number of the citizen (required).",
@@ -42,14 +47,18 @@ db.createCollection("citizens", {
           description:
             "Reference to the polling station where the citizen is registered (required).",
         },
-        attended: {
+        attended_to: {
           bsonType: "array",
           description: "List of attendance to polling stations records.",
           items: {
             bsonType: "object",
-            required: ["time", "polling_station"],
+            required: ["_id", "timestamp", "polling_station"],
             properties: {
-              time: {
+              _id: {
+                bsonType: "objectId",
+                description: "Unique identifier for the attendance (required).",
+              },
+              timestamp: {
                 bsonType: "date",
                 description: "Timestamp of attendance (required).",
               },
