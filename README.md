@@ -98,3 +98,21 @@ Entre na pasta [`mongodb`](mongodb/).
 ```bash
 cd mongodb
 ```
+
+Instale as dependências necessárias pelo `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
+Execute o script [`populate.py`](mongodb/populate.py) para popular o banco de dados:
+
+```bash
+python populate.py
+```
+
+Para fazer dump dos dados, execute o seguinte comando:
+
+```bash
+mongodump --uri="mongodb://admin:melancia@localhost:27017/tse_online" --authenticationDatabase admin
+```
