@@ -1,0 +1,322 @@
+[
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "polling_stations": [
+      {
+        "valid_votes": 5,
+        "attended": 6,
+        "registered": 7,
+        "name": "Local de Voto Sabiá-do-Campo",
+        "blank_votes": 1,
+        "candidates": [
+          {
+            "votes": 3,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      },
+      {
+        "valid_votes": 5,
+        "attended": 7,
+        "registered": 7,
+        "name": "Centro de Votação Mangueira",
+        "blank_votes": 2,
+        "candidates": [
+          {
+            "votes": 3,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "polling_stations": [
+      {
+        "valid_votes": 6,
+        "attended": 7,
+        "registered": 7,
+        "name": "Centro de Votação Arara-Azul",
+        "blank_votes": 1,
+        "candidates": [
+          {
+            "votes": 3,
+            "party": "30"
+          },
+          {
+            "votes": 3,
+            "party": "10"
+          }
+        ]
+      },
+      {
+        "valid_votes": 5,
+        "attended": 5,
+        "registered": 7,
+        "name": "Estação de Voto Cedro",
+        "blank_votes": 0,
+        "candidates": [
+          {
+            "votes": 3,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "polling_stations": [
+      {
+        "valid_votes": 2,
+        "attended": 2,
+        "registered": 6,
+        "name": "Estação de Voto Canário",
+        "blank_votes": 0,
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "30"
+          },
+          {
+            "votes": 1,
+            "party": "20"
+          }
+        ]
+      },
+      {
+        "valid_votes": 5,
+        "attended": 6,
+        "registered": 6,
+        "name": "Local de Voto Pau-Brasil",
+        "blank_votes": 1,
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 3,
+            "party": "20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "polling_stations": [
+      {
+        "valid_votes": 5,
+        "attended": 5,
+        "registered": 6,
+        "name": "Local de Voto Gralha-Azul",
+        "blank_votes": 0,
+        "candidates": [
+          {
+            "votes": 3,
+            "party": "20"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      },
+      {
+        "valid_votes": 4,
+        "attended": 6,
+        "registered": 6,
+        "name": "Centro de Votação Ipê-Roxo",
+        "blank_votes": 2,
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "20"
+          },
+          {
+            "votes": 3,
+            "party": "10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "polling_stations": [
+      {
+        "valid_votes": 5,
+        "attended": 6,
+        "registered": 6,
+        "name": "Centro de Votação Sereia",
+        "blank_votes": 1,
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 3,
+            "party": "10"
+          }
+        ]
+      },
+      {
+        "valid_votes": 4,
+        "attended": 4,
+        "registered": 6,
+        "name": "Estação de Voto Farol da Barra",
+        "blank_votes": 0,
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "polling_stations": [
+      {
+        "valid_votes": 4,
+        "attended": 4,
+        "registered": 6,
+        "name": "Estação de Voto Beija-Flor-de-Papo-Branco",
+        "blank_votes": 0,
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "20"
+          }
+        ]
+      },
+      {
+        "valid_votes": 5,
+        "attended": 6,
+        "registered": 6,
+        "name": "Local de Voto Cajueiro",
+        "blank_votes": 1,
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 3,
+            "party": "20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "polling_stations": [
+      {
+        "valid_votes": 4,
+        "attended": 5,
+        "registered": 6,
+        "name": "Local de Voto Andorinha",
+        "blank_votes": 1,
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "20"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      },
+      {
+        "valid_votes": 3,
+        "attended": 3,
+        "registered": 6,
+        "name": "Centro de Votação Pedra do Reino",
+        "blank_votes": 0,
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "20"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "polling_stations": [
+      {
+        "valid_votes": 3,
+        "attended": 3,
+        "registered": 6,
+        "name": "Centro de Votação Colibri",
+        "blank_votes": 0,
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      },
+      {
+        "valid_votes": 4,
+        "attended": 4,
+        "registered": 6,
+        "name": "Estação de Voto Jatobá",
+        "blank_votes": 0,
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ]
+      }
+    ]
+  }
+]

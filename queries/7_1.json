@@ -1,0 +1,18 @@
+[
+  {
+    "age_ranges": "18-29",
+    "candidate_count": 4
+  },
+  {
+    "age_ranges": "30-39",
+    "candidate_count": 2
+  },
+  {
+    "age_ranges": "40-49",
+    "candidate_count": 7
+  },
+  {
+    "age_ranges": "50+",
+    "candidate_count": 3
+  }
+]

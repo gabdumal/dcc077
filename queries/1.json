@@ -1,0 +1,210 @@
+[
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "candidates": [
+      {
+        "name": "Márcio Falcão",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 32,
+        "gender": "masculine",
+        "party": "10"
+      },
+      {
+        "name": "Cauê Guimarães",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 22,
+        "gender": "neutral",
+        "party": "30"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "candidates": [
+      {
+        "name": "Ana Costa",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 45,
+        "gender": "neutral",
+        "party": "30"
+      },
+      {
+        "name": "Marcelo Fonseca",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 20,
+        "gender": "masculine",
+        "party": "10"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "candidates": [
+      {
+        "name": "Vanessa Dias",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 45,
+        "gender": "feminine",
+        "party": "20"
+      },
+      {
+        "name": "Isabela Freitas",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 40,
+        "gender": "feminine",
+        "party": "30"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "candidates": [
+      {
+        "name": "Luciana Barros",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 43,
+        "gender": "feminine",
+        "party": "10"
+      },
+      {
+        "name": "Renata Miranda",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 54,
+        "gender": "feminine",
+        "party": "20"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "candidates": [
+      {
+        "name": "Bruno Carvalho",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 32,
+        "gender": "masculine",
+        "party": "30"
+      },
+      {
+        "name": "Clara Monteiro",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 47,
+        "gender": "feminine",
+        "party": "10"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "candidates": [
+      {
+        "name": "Natália Andrade",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 56,
+        "gender": "feminine",
+        "party": "20"
+      },
+      {
+        "name": "André Vieira",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 23,
+        "gender": "masculine",
+        "party": "30"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "candidates": [
+      {
+        "name": "Beatriz Neves",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 49,
+        "gender": "feminine",
+        "party": "10"
+      },
+      {
+        "name": "Igor Dantas",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 24,
+        "gender": "masculine",
+        "party": "20"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "candidates": [
+      {
+        "name": "Laura Freitas",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 50,
+        "gender": "feminine",
+        "party": "30"
+      },
+      {
+        "name": "Sandra Moraes",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Feira de Santana"
+        },
+        "age": 41,
+        "gender": "feminine",
+        "party": "10"
+      }
+    ]
+  }
+]

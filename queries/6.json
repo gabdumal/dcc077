@@ -1,0 +1,178 @@
+[
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "candidates_with_percentages": [
+      {
+        "votes_to_valid": 60.0,
+        "votes": 6,
+        "party": "30"
+      },
+      {
+        "votes_to_valid": 40.0,
+        "votes": 4,
+        "party": "10"
+      }
+    ],
+    "blank_votes": 3,
+    "blank_votes_to_total": 23.076923076923077,
+    "valid_votes": 10,
+    "turnout_percentage": 92.85714285714286,
+    "registered": 14,
+    "attended": 13
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "candidates_with_percentages": [
+      {
+        "votes_to_valid": 54.54545454545454,
+        "votes": 6,
+        "party": "30"
+      },
+      {
+        "votes_to_valid": 45.45454545454545,
+        "votes": 5,
+        "party": "10"
+      }
+    ],
+    "blank_votes": 1,
+    "blank_votes_to_total": 8.333333333333332,
+    "valid_votes": 11,
+    "turnout_percentage": 85.71428571428571,
+    "registered": 14,
+    "attended": 12
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "candidates_with_percentages": [
+      {
+        "votes_to_valid": 42.857142857142854,
+        "votes": 3,
+        "party": "30"
+      },
+      {
+        "votes_to_valid": 57.14285714285714,
+        "votes": 4,
+        "party": "20"
+      }
+    ],
+    "blank_votes": 1,
+    "blank_votes_to_total": 12.5,
+    "valid_votes": 7,
+    "turnout_percentage": 66.66666666666666,
+    "registered": 12,
+    "attended": 8
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "candidates_with_percentages": [
+      {
+        "votes_to_valid": 44.44444444444444,
+        "votes": 4,
+        "party": "20"
+      },
+      {
+        "votes_to_valid": 55.55555555555556,
+        "votes": 5,
+        "party": "10"
+      }
+    ],
+    "blank_votes": 2,
+    "blank_votes_to_total": 18.181818181818183,
+    "valid_votes": 9,
+    "turnout_percentage": 91.66666666666666,
+    "registered": 12,
+    "attended": 11
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "candidates_with_percentages": [
+      {
+        "votes_to_valid": 44.44444444444444,
+        "votes": 4,
+        "party": "30"
+      },
+      {
+        "votes_to_valid": 55.55555555555556,
+        "votes": 5,
+        "party": "10"
+      }
+    ],
+    "blank_votes": 1,
+    "blank_votes_to_total": 10.0,
+    "valid_votes": 9,
+    "turnout_percentage": 83.33333333333334,
+    "registered": 12,
+    "attended": 10
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "candidates_with_percentages": [
+      {
+        "votes_to_valid": 44.44444444444444,
+        "votes": 4,
+        "party": "30"
+      },
+      {
+        "votes_to_valid": 55.55555555555556,
+        "votes": 5,
+        "party": "20"
+      }
+    ],
+    "blank_votes": 1,
+    "blank_votes_to_total": 10.0,
+    "valid_votes": 9,
+    "turnout_percentage": 83.33333333333334,
+    "registered": 12,
+    "attended": 10
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "candidates_with_percentages": [
+      {
+        "votes_to_valid": 42.857142857142854,
+        "votes": 3,
+        "party": "20"
+      },
+      {
+        "votes_to_valid": 57.14285714285714,
+        "votes": 4,
+        "party": "10"
+      }
+    ],
+    "blank_votes": 1,
+    "blank_votes_to_total": 12.5,
+    "valid_votes": 7,
+    "turnout_percentage": 66.66666666666666,
+    "registered": 12,
+    "attended": 8
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "candidates_with_percentages": [
+      {
+        "votes_to_valid": 42.857142857142854,
+        "votes": 3,
+        "party": "30"
+      },
+      {
+        "votes_to_valid": 57.14285714285714,
+        "votes": 4,
+        "party": "10"
+      }
+    ],
+    "blank_votes": 0,
+    "blank_votes_to_total": 0.0,
+    "valid_votes": 7,
+    "turnout_percentage": 58.333333333333336,
+    "registered": 12,
+    "attended": 7
+  }
+]

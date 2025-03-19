@@ -1,0 +1,14 @@
+[
+  {
+    "gender": "feminine",
+    "candidate_count": 9
+  },
+  {
+    "gender": "masculine",
+    "candidate_count": 5
+  },
+  {
+    "gender": "neutral",
+    "candidate_count": 2
+  }
+]

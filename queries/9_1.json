@@ -1,0 +1,42 @@
+[
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "average_age": 35.57142857142857
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "average_age": 36.57142857142857
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "average_age": 37.416666666666664
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "average_age": 34.62500000000001
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "average_age": 37.91666666666667
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "average_age": 33.368421052631575
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "average_age": 32.75
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "average_age": 37.583333333333336
+  }
+]

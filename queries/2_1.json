@@ -1,0 +1,1214 @@
+[
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "polling_station": "Local de Voto Sabiá-do-Campo",
+    "citizens": [
+      {
+        "attended": "2022-10-02T14:55:00Z",
+        "cpf_number": "00000000066",
+        "name": "Marcos Pereira",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 28,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T12:05:00Z",
+        "cpf_number": "00000000050",
+        "name": "Simone Câmara",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 38,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T16:40:00Z",
+        "cpf_number": "00000000018",
+        "name": "Camila Dias",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 42,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T09:30:00Z",
+        "cpf_number": "00000000002",
+        "name": "Maria Oliveira",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Feira de Santana"
+        },
+        "age": 40,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T14:20:00Z",
+        "cpf_number": "00000000034",
+        "name": "Helena Fonseca",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 36,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000098",
+        "name": "Cauê Guimarães",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 22,
+        "gender": "neutral"
+      },
+      {
+        "attended": "2022-10-02T12:50:00Z",
+        "cpf_number": "00000000082",
+        "name": "Paulo Cunha",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 20,
+        "gender": "masculine"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "polling_station": "Centro de Votação Mangueira",
+    "citizens": [
+      {
+        "attended": "2022-10-02T15:25:00Z",
+        "cpf_number": "00000000017",
+        "name": "Felipe Nunes",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 28,
+        "gender": "neutral"
+      },
+      {
+        "attended": "2022-10-02T09:15:00Z",
+        "cpf_number": "00000000097",
+        "name": "Yasmin Vasconcelos",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 59,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T11:55:00Z",
+        "cpf_number": "00000000049",
+        "name": "Márcio Falcão",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 32,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T13:45:00Z",
+        "cpf_number": "00000000033",
+        "name": "Diego Ramos",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 29,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T13:45:00Z",
+        "cpf_number": "00000000065",
+        "name": "Aline Barbosa",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 43,
+        "gender": "neutral"
+      },
+      {
+        "attended": "2022-10-02T11:35:00Z",
+        "cpf_number": "00000000081",
+        "name": "Carolina Pires",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 51,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T08:15:00Z",
+        "cpf_number": "00000000001",
+        "name": "João Silva",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 35,
+        "gender": "masculine"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "polling_station": "Centro de Votação Arara-Azul",
+    "citizens": [
+      {
+        "attended": "2022-10-02T09:05:00Z",
+        "cpf_number": "00000000020",
+        "name": "Vanessa Lopes",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 43,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T14:15:00Z",
+        "cpf_number": "00000000084",
+        "name": "Marcelo Fonseca",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 20,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T16:25:00Z",
+        "cpf_number": "00000000068",
+        "name": "Felipe Mendes",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 27,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T16:10:00Z",
+        "cpf_number": "00000000036",
+        "name": "Cláudia Guimarães",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 39,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T12:45:00Z",
+        "cpf_number": "00000000100",
+        "name": "Arthur Siqueira",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 21,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T09:30:00Z",
+        "cpf_number": "00000000052",
+        "name": "Carlos Oliveira",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 35,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T11:20:00Z",
+        "cpf_number": "00000000004",
+        "name": "Ana Costa",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 45,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "polling_station": "Estação de Voto Cedro",
+    "citizens": [
+      {
+        "attended": "2022-10-02T08:15:00Z",
+        "cpf_number": "00000000051",
+        "name": "Ana Silva",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 40,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T11:40:00Z",
+        "cpf_number": "00000000099",
+        "name": "Letícia Duarte",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 60,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000003",
+        "name": "Pedro Souza",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 30,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T13:05:00Z",
+        "cpf_number": "00000000083",
+        "name": "Sara Marques",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 52,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000035",
+        "name": "Alexandre Brito",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 31,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T15:10:00Z",
+        "cpf_number": "00000000067",
+        "name": "Isabela Castro",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 44,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T08:55:00Z",
+        "cpf_number": "00000000019",
+        "name": "Roberto Mendes",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 26,
+        "gender": "masculine"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "polling_station": "Estação de Voto Canário",
+    "citizens": [
+      {
+        "attended": null,
+        "cpf_number": "00000000054",
+        "name": "Pedro Santos",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Feira de Santana"
+        },
+        "age": 33,
+        "gender": "masculine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000006",
+        "name": "Carla Santos",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 33,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000070",
+        "name": "Rafael Cardoso",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 26,
+        "gender": "masculine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000086",
+        "name": "Leandro Tavares",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 20,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T11:30:00Z",
+        "cpf_number": "00000000022",
+        "name": "Isabela Freitas",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 40,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T09:40:00Z",
+        "cpf_number": "00000000038",
+        "name": "Natália Peixoto",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 42,
+        "gender": "feminine"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "polling_station": "Local de Voto Pau-Brasil",
+    "citizens": [
+      {
+        "attended": "2022-10-02T10:15:00Z",
+        "cpf_number": "00000000021",
+        "name": "Eduardo Correia",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 35,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T12:00:00Z",
+        "cpf_number": "00000000005",
+        "name": "Lucas Fernandes",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 25,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T10:45:00Z",
+        "cpf_number": "00000000053",
+        "name": "Mariana Costa",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 37,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T08:25:00Z",
+        "cpf_number": "00000000037",
+        "name": "Vinícius Andrade",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 28,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T15:30:00Z",
+        "cpf_number": "00000000085",
+        "name": "Helena Barros",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 53,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T08:35:00Z",
+        "cpf_number": "00000000069",
+        "name": "Vanessa Dias",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 45,
+        "gender": "feminine"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "polling_station": "Local de Voto Gralha-Azul",
+    "citizens": [
+      {
+        "attended": "2022-10-02T09:20:00Z",
+        "cpf_number": "00000000088",
+        "name": "Vinícius Xavier",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 20,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T11:15:00Z",
+        "cpf_number": "00000000072",
+        "name": "Bruno Correia",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 25,
+        "gender": "masculine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000040",
+        "name": "Luciana Barros",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 43,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T13:20:00Z",
+        "cpf_number": "00000000024",
+        "name": "Larissa Cardoso",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 45,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T15:40:00Z",
+        "cpf_number": "00000000008",
+        "name": "Fernanda Lima",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 27,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T13:35:00Z",
+        "cpf_number": "00000000056",
+        "name": "Ricardo Almeida",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 34,
+        "gender": "masculine"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "polling_station": "Centro de Votação Ipê-Roxo",
+    "citizens": [
+      {
+        "attended": "2022-10-02T12:20:00Z",
+        "cpf_number": "00000000055",
+        "name": "Fernanda Lima",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 39,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T10:05:00Z",
+        "cpf_number": "00000000071",
+        "name": "Larissa Teixeira",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 46,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T12:45:00Z",
+        "cpf_number": "00000000023",
+        "name": "Thiago Araújo",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 30,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T10:55:00Z",
+        "cpf_number": "00000000039",
+        "name": "Ricardo Tavares",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 26,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T14:25:00Z",
+        "cpf_number": "00000000007",
+        "name": "Rafael Almeida",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 37,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T08:55:00Z",
+        "cpf_number": "00000000087",
+        "name": "Renata Miranda",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 54,
+        "gender": "feminine"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "polling_station": "Centro de Votação Sereia",
+    "citizens": [
+      {
+        "attended": "2022-10-02T13:55:00Z",
+        "cpf_number": "00000000074",
+        "name": "Eduardo Moreira",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 24,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T15:05:00Z",
+        "cpf_number": "00000000058",
+        "name": "Lucas Carvalho",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 32,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T13:30:00Z",
+        "cpf_number": "00000000042",
+        "name": "Gabriela Moura",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 40,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T11:45:00Z",
+        "cpf_number": "00000000090",
+        "name": "Rodrigo Peixoto",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 20,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T15:10:00Z",
+        "cpf_number": "00000000026",
+        "name": "Mariana Moreira",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 33,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T08:05:00Z",
+        "cpf_number": "00000000010",
+        "name": "Juliana Rocha",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 38,
+        "gender": "feminine"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "polling_station": "Estação de Voto Farol da Barra",
+    "citizens": [
+      {
+        "attended": null,
+        "cpf_number": "00000000089",
+        "name": "Amanda Brito",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 55,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T14:00:00Z",
+        "cpf_number": "00000000025",
+        "name": "Rodrigo Teixeira",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 25,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T12:40:00Z",
+        "cpf_number": "00000000073",
+        "name": "Clara Monteiro",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 47,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000041",
+        "name": "Fábio Rios",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 35,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T14:50:00Z",
+        "cpf_number": "00000000057",
+        "name": "Juliana Ribeiro",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 36,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T16:55:00Z",
+        "cpf_number": "00000000009",
+        "name": "Bruno Carvalho",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 32,
+        "gender": "masculine"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "polling_station": "Estação de Voto Beija-Flor-de-Papo-Branco",
+    "citizens": [
+      {
+        "attended": "2022-10-02T08:40:00Z",
+        "cpf_number": "00000000028",
+        "name": "Bianca Neves",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 27,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T08:25:00Z",
+        "cpf_number": "00000000060",
+        "name": "Gustavo Martins",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 31,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T10:30:00Z",
+        "cpf_number": "00000000012",
+        "name": "Patrícia Gomes",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 41,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000044",
+        "name": "Raquel Vasconcelos",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Feira de Santana"
+        },
+        "age": 45,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T13:10:00Z",
+        "cpf_number": "00000000092",
+        "name": "Alexandre Campos",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Feira de Santana"
+        },
+        "age": 25,
+        "gender": "masculine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000076",
+        "name": "André Vieira",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 23,
+        "gender": "masculine"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "polling_station": "Local de Voto Cajueiro",
+    "citizens": [
+      {
+        "attended": "2022-10-02T16:15:00Z",
+        "cpf_number": "00000000059",
+        "name": "Patrícia Gomes",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 38,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T16:25:00Z",
+        "cpf_number": "00000000027",
+        "name": "André Cunha",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 37,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T12:55:00Z",
+        "cpf_number": "00000000091",
+        "name": "Natália Andrade",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 56,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T14:45:00Z",
+        "cpf_number": "00000000043",
+        "name": "Leonardo Dantas",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 30,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T09:15:00Z",
+        "cpf_number": "00000000011",
+        "name": "Marcos Pereira",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 34,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T14:10:00Z",
+        "cpf_number": "00000000075",
+        "name": "Gabriela Lopes",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 48,
+        "gender": "feminine"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "polling_station": "Local de Voto Andorinha",
+    "citizens": [
+      {
+        "attended": "2022-10-02T08:10:00Z",
+        "cpf_number": "00000000046",
+        "name": "Letícia Rezende",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Feira de Santana"
+        },
+        "age": 33,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T10:55:00Z",
+        "cpf_number": "00000000062",
+        "name": "Roberto Nunes",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 30,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T15:40:00Z",
+        "cpf_number": "00000000094",
+        "name": "Igor Dantas",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 24,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T10:05:00Z",
+        "cpf_number": "00000000030",
+        "name": "Renata Pires",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 38,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T12:20:00Z",
+        "cpf_number": "00000000014",
+        "name": "Aline Barbosa",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 36,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000078",
+        "name": "Thiago Machado",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 22,
+        "gender": "masculine"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "polling_station": "Centro de Votação Pedra do Reino",
+    "citizens": [
+      {
+        "attended": "2022-10-02T09:40:00Z",
+        "cpf_number": "00000000061",
+        "name": "Tatiane Rocha",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 41,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000029",
+        "name": "Carlos Monteiro",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 32,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T14:25:00Z",
+        "cpf_number": "00000000093",
+        "name": "Bianca Rezende",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Vitória da Conquista"
+        },
+        "age": 57,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T16:00:00Z",
+        "cpf_number": "00000000045",
+        "name": "Marcelo Bezerra",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 25,
+        "gender": "masculine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000013",
+        "name": "Gustavo Martins",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 29,
+        "gender": "masculine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000077",
+        "name": "Beatriz Neves",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Camaçari"
+        },
+        "age": 49,
+        "gender": "feminine"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "polling_station": "Centro de Votação Colibri",
+    "citizens": [
+      {
+        "attended": "2022-10-02T12:30:00Z",
+        "cpf_number": "00000000032",
+        "name": "Sandra Moraes",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Feira de Santana"
+        },
+        "age": 41,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000048",
+        "name": "Elaine Siqueira",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 27,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000016",
+        "name": "Tatiane Castro",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Feira de Santana"
+        },
+        "age": 39,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T10:25:00Z",
+        "cpf_number": "00000000080",
+        "name": "Diego Araújo",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 21,
+        "gender": "masculine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000096",
+        "name": "Hugo Bezerra",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 23,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T12:30:00Z",
+        "cpf_number": "00000000064",
+        "name": "Daniel Souza",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 29,
+        "gender": "masculine"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "polling_station": "Estação de Voto Jatobá",
+    "citizens": [
+      {
+        "attended": "2022-10-02T11:15:00Z",
+        "cpf_number": "00000000031",
+        "name": "Paulo Viana",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 34,
+        "gender": "masculine"
+      },
+      {
+        "attended": "2022-10-02T11:20:00Z",
+        "cpf_number": "00000000063",
+        "name": "Camila Fernandes",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Juiz de Fora"
+        },
+        "age": 42,
+        "gender": "feminine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000047",
+        "name": "Hugo Medeiros",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Contagem"
+        },
+        "age": 37,
+        "gender": "neutral"
+      },
+      {
+        "attended": "2022-10-02T09:10:00Z",
+        "cpf_number": "00000000079",
+        "name": "Laura Freitas",
+        "born_in": {
+          "state": "Bahia",
+          "city": "Salvador"
+        },
+        "age": 50,
+        "gender": "feminine"
+      },
+      {
+        "attended": "2022-10-02T13:00:00Z",
+        "cpf_number": "00000000015",
+        "name": "Daniel Ribeiro",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Belo Horizonte"
+        },
+        "age": 31,
+        "gender": "masculine"
+      },
+      {
+        "attended": null,
+        "cpf_number": "00000000095",
+        "name": "Luana Moura",
+        "born_in": {
+          "state": "Minas Gerais",
+          "city": "Uberlândia"
+        },
+        "age": 58,
+        "gender": "feminine"
+      }
+    ]
+  }
+]

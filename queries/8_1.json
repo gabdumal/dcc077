@@ -1,0 +1,178 @@
+[
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "age_ranges": [
+      {
+        "citizen_count": 2,
+        "age_range": "40-49"
+      },
+      {
+        "citizen_count": 4,
+        "age_range": "18-29"
+      },
+      {
+        "citizen_count": 4,
+        "age_range": "30-39"
+      },
+      {
+        "citizen_count": 2,
+        "age_range": "50+"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "age_ranges": [
+      {
+        "citizen_count": 3,
+        "age_range": "18-29"
+      },
+      {
+        "citizen_count": 5,
+        "age_range": "30-39"
+      },
+      {
+        "citizen_count": 3,
+        "age_range": "40-49"
+      },
+      {
+        "citizen_count": 1,
+        "age_range": "50+"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "age_ranges": [
+      {
+        "citizen_count": 3,
+        "age_range": "18-29"
+      },
+      {
+        "citizen_count": 6,
+        "age_range": "30-39"
+      },
+      {
+        "citizen_count": 2,
+        "age_range": "40-49"
+      },
+      {
+        "citizen_count": 1,
+        "age_range": "50+"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "age_ranges": [
+      {
+        "citizen_count": 5,
+        "age_range": "30-39"
+      },
+      {
+        "citizen_count": 4,
+        "age_range": "18-29"
+      },
+      {
+        "citizen_count": 2,
+        "age_range": "40-49"
+      },
+      {
+        "citizen_count": 1,
+        "age_range": "50+"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "age_ranges": [
+      {
+        "citizen_count": 5,
+        "age_range": "18-29"
+      },
+      {
+        "citizen_count": 4,
+        "age_range": "30-39"
+      },
+      {
+        "citizen_count": 3,
+        "age_range": "40-49"
+      },
+      {
+        "citizen_count": 2,
+        "age_range": "50+"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "age_ranges": [
+      {
+        "citizen_count": 4,
+        "age_range": "30-39"
+      },
+      {
+        "citizen_count": 4,
+        "age_range": "18-29"
+      },
+      {
+        "citizen_count": 3,
+        "age_range": "40-49"
+      },
+      {
+        "citizen_count": 1,
+        "age_range": "50+"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "age_ranges": [
+      {
+        "citizen_count": 4,
+        "age_range": "18-29"
+      },
+      {
+        "citizen_count": 3,
+        "age_range": "40-49"
+      },
+      {
+        "citizen_count": 4,
+        "age_range": "30-39"
+      },
+      {
+        "citizen_count": 1,
+        "age_range": "50+"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "age_ranges": [
+      {
+        "citizen_count": 4,
+        "age_range": "40-49"
+      },
+      {
+        "citizen_count": 4,
+        "age_range": "18-29"
+      },
+      {
+        "citizen_count": 4,
+        "age_range": "30-39"
+      },
+      {
+        "citizen_count": 2,
+        "age_range": "50+"
+      }
+    ]
+  }
+]

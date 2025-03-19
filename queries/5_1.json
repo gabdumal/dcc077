@@ -1,0 +1,146 @@
+[
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "candidates": [
+      {
+        "votes": 6,
+        "party": "30"
+      },
+      {
+        "votes": 4,
+        "party": "10"
+      }
+    ],
+    "valid_votes": 10,
+    "blank_votes": 3,
+    "registered": 14,
+    "attended": 13
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "candidates": [
+      {
+        "votes": 6,
+        "party": "30"
+      },
+      {
+        "votes": 5,
+        "party": "10"
+      }
+    ],
+    "valid_votes": 11,
+    "blank_votes": 1,
+    "registered": 14,
+    "attended": 12
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "candidates": [
+      {
+        "votes": 3,
+        "party": "30"
+      },
+      {
+        "votes": 4,
+        "party": "20"
+      }
+    ],
+    "valid_votes": 7,
+    "blank_votes": 1,
+    "registered": 12,
+    "attended": 8
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "candidates": [
+      {
+        "votes": 4,
+        "party": "20"
+      },
+      {
+        "votes": 5,
+        "party": "10"
+      }
+    ],
+    "valid_votes": 9,
+    "blank_votes": 2,
+    "registered": 12,
+    "attended": 11
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "candidates": [
+      {
+        "votes": 4,
+        "party": "30"
+      },
+      {
+        "votes": 5,
+        "party": "10"
+      }
+    ],
+    "valid_votes": 9,
+    "blank_votes": 1,
+    "registered": 12,
+    "attended": 10
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "candidates": [
+      {
+        "votes": 4,
+        "party": "30"
+      },
+      {
+        "votes": 5,
+        "party": "20"
+      }
+    ],
+    "valid_votes": 9,
+    "blank_votes": 1,
+    "registered": 12,
+    "attended": 10
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "candidates": [
+      {
+        "votes": 3,
+        "party": "20"
+      },
+      {
+        "votes": 4,
+        "party": "10"
+      }
+    ],
+    "valid_votes": 7,
+    "blank_votes": 1,
+    "registered": 12,
+    "attended": 8
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "candidates": [
+      {
+        "votes": 3,
+        "party": "30"
+      },
+      {
+        "votes": 4,
+        "party": "10"
+      }
+    ],
+    "valid_votes": 7,
+    "blank_votes": 0,
+    "registered": 12,
+    "attended": 7
+  }
+]

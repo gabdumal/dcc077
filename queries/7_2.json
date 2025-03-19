@@ -1,0 +1,42 @@
+[
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "candidate_count": 2
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "candidate_count": 1
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "candidate_count": 2
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "candidate_count": 2
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "candidate_count": 2
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "candidate_count": 4
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "candidate_count": 2
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "candidate_count": 1
+  }
+]

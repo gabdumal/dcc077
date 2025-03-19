@@ -1,0 +1,146 @@
+[
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "genders": [
+      {
+        "citizen_count": 5,
+        "gender": "masculine"
+      },
+      {
+        "citizen_count": 6,
+        "gender": "feminine"
+      },
+      {
+        "citizen_count": 1,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "genders": [
+      {
+        "citizen_count": 6,
+        "gender": "masculine"
+      },
+      {
+        "citizen_count": 6,
+        "gender": "feminine"
+      },
+      {
+        "citizen_count": 0,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "genders": [
+      {
+        "citizen_count": 6,
+        "gender": "masculine"
+      },
+      {
+        "citizen_count": 6,
+        "gender": "feminine"
+      },
+      {
+        "citizen_count": 0,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "genders": [
+      {
+        "citizen_count": 6,
+        "gender": "masculine"
+      },
+      {
+        "citizen_count": 6,
+        "gender": "feminine"
+      },
+      {
+        "citizen_count": 0,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "genders": [
+      {
+        "citizen_count": 5,
+        "gender": "masculine"
+      },
+      {
+        "citizen_count": 6,
+        "gender": "feminine"
+      },
+      {
+        "citizen_count": 3,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "genders": [
+      {
+        "citizen_count": 6,
+        "gender": "masculine"
+      },
+      {
+        "citizen_count": 6,
+        "gender": "feminine"
+      },
+      {
+        "citizen_count": 0,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "genders": [
+      {
+        "citizen_count": 6,
+        "gender": "masculine"
+      },
+      {
+        "citizen_count": 6,
+        "gender": "feminine"
+      },
+      {
+        "citizen_count": 0,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "genders": [
+      {
+        "citizen_count": 7,
+        "gender": "masculine"
+      },
+      {
+        "citizen_count": 6,
+        "gender": "feminine"
+      },
+      {
+        "citizen_count": 1,
+        "gender": "neutral"
+      }
+    ]
+  }
+]

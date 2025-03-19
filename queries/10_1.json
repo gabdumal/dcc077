@@ -1,0 +1,60 @@
+[
+  {
+    "party": "10",
+    "age_ranges": [
+      {
+        "candidate_count": 1,
+        "age_range": "30-39"
+      },
+      {
+        "candidate_count": 1,
+        "age_range": "18-29"
+      },
+      {
+        "candidate_count": 4,
+        "age_range": "40-49"
+      }
+    ],
+    "total_candidates": 6
+  },
+  {
+    "party": "20",
+    "age_ranges": [
+      {
+        "candidate_count": 1,
+        "age_range": "40-49"
+      },
+      {
+        "candidate_count": 2,
+        "age_range": "50+"
+      },
+      {
+        "candidate_count": 1,
+        "age_range": "18-29"
+      }
+    ],
+    "total_candidates": 4
+  },
+  {
+    "party": "30",
+    "age_ranges": [
+      {
+        "candidate_count": 2,
+        "age_range": "18-29"
+      },
+      {
+        "candidate_count": 2,
+        "age_range": "40-49"
+      },
+      {
+        "candidate_count": 1,
+        "age_range": "30-39"
+      },
+      {
+        "candidate_count": 1,
+        "age_range": "50+"
+      }
+    ],
+    "total_candidates": 6
+  }
+]

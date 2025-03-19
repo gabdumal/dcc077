@@ -1,0 +1,53 @@
+[
+  {
+    "party": "10",
+    "genders": [
+      {
+        "candidate_count": 2,
+        "gender": "masculine"
+      },
+      {
+        "candidate_count": 4,
+        "gender": "feminine"
+      },
+      {
+        "candidate_count": 0,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "party": "20",
+    "genders": [
+      {
+        "candidate_count": 1,
+        "gender": "masculine"
+      },
+      {
+        "candidate_count": 3,
+        "gender": "feminine"
+      },
+      {
+        "candidate_count": 0,
+        "gender": "neutral"
+      }
+    ]
+  },
+  {
+    "party": "30",
+    "genders": [
+      {
+        "candidate_count": 2,
+        "gender": "masculine"
+      },
+      {
+        "candidate_count": 2,
+        "gender": "feminine"
+      },
+      {
+        "candidate_count": 2,
+        "gender": "neutral"
+      }
+    ]
+  }
+]

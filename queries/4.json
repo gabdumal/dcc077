@@ -1,0 +1,508 @@
+[
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "polling_stations": [
+      {
+        "polling_station": "Local de Voto Sabiá-do-Campo",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000098",
+                "name": "Cauê Guimarães",
+                "age": 22,
+                "votes": 3,
+                "gender": "neutral",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000049",
+                "name": "Márcio Falcão",
+                "age": 32,
+                "votes": 2,
+                "gender": "masculine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA003"
+          }
+        ]
+      },
+      {
+        "polling_station": "Centro de Votação Mangueira",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000098",
+                "name": "Cauê Guimarães",
+                "age": 22,
+                "votes": 2,
+                "gender": "neutral",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000049",
+                "name": "Márcio Falcão",
+                "age": 32,
+                "votes": 1,
+                "gender": "masculine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA002"
+          },
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000098",
+                "name": "Cauê Guimarães",
+                "age": 22,
+                "votes": 1,
+                "gender": "neutral",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000049",
+                "name": "Márcio Falcão",
+                "age": 32,
+                "votes": 1,
+                "gender": "masculine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA001"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "polling_stations": [
+      {
+        "polling_station": "Centro de Votação Arara-Azul",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000004",
+                "name": "Ana Costa",
+                "age": 45,
+                "votes": 3,
+                "gender": "neutral",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000084",
+                "name": "Marcelo Fonseca",
+                "age": 20,
+                "votes": 3,
+                "gender": "masculine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA006"
+          }
+        ]
+      },
+      {
+        "polling_station": "Estação de Voto Cedro",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000004",
+                "name": "Ana Costa",
+                "age": 45,
+                "votes": 1,
+                "gender": "neutral",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000084",
+                "name": "Marcelo Fonseca",
+                "age": 20,
+                "votes": 1,
+                "gender": "masculine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA005"
+          },
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000004",
+                "name": "Ana Costa",
+                "age": 45,
+                "votes": 2,
+                "gender": "neutral",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000084",
+                "name": "Marcelo Fonseca",
+                "age": 20,
+                "votes": 1,
+                "gender": "masculine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA004"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "polling_stations": [
+      {
+        "polling_station": "Estação de Voto Canário",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000022",
+                "name": "Isabela Freitas",
+                "age": 40,
+                "votes": 1,
+                "gender": "feminine",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000069",
+                "name": "Vanessa Dias",
+                "age": 45,
+                "votes": 1,
+                "gender": "feminine",
+                "party": "20"
+              }
+            ],
+            "serial_number": "AAA008"
+          }
+        ]
+      },
+      {
+        "polling_station": "Local de Voto Pau-Brasil",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000022",
+                "name": "Isabela Freitas",
+                "age": 40,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000069",
+                "name": "Vanessa Dias",
+                "age": 45,
+                "votes": 3,
+                "gender": "feminine",
+                "party": "20"
+              }
+            ],
+            "serial_number": "AAA007"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "polling_stations": [
+      {
+        "polling_station": "Local de Voto Gralha-Azul",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000087",
+                "name": "Renata Miranda",
+                "age": 54,
+                "votes": 3,
+                "gender": "feminine",
+                "party": "20"
+              },
+              {
+                "cpf_number": "00000000040",
+                "name": "Luciana Barros",
+                "age": 43,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA010"
+          }
+        ]
+      },
+      {
+        "polling_station": "Centro de Votação Ipê-Roxo",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000087",
+                "name": "Renata Miranda",
+                "age": 54,
+                "votes": 1,
+                "gender": "feminine",
+                "party": "20"
+              },
+              {
+                "cpf_number": "00000000040",
+                "name": "Luciana Barros",
+                "age": 43,
+                "votes": 3,
+                "gender": "feminine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA009"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "polling_stations": [
+      {
+        "polling_station": "Centro de Votação Sereia",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000009",
+                "name": "Bruno Carvalho",
+                "age": 32,
+                "votes": 2,
+                "gender": "masculine",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000073",
+                "name": "Clara Monteiro",
+                "age": 47,
+                "votes": 3,
+                "gender": "feminine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA012"
+          }
+        ]
+      },
+      {
+        "polling_station": "Estação de Voto Farol da Barra",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000009",
+                "name": "Bruno Carvalho",
+                "age": 32,
+                "votes": 2,
+                "gender": "masculine",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000073",
+                "name": "Clara Monteiro",
+                "age": 47,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA011"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "polling_stations": [
+      {
+        "polling_station": "Estação de Voto Beija-Flor-de-Papo-Branco",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000076",
+                "name": "André Vieira",
+                "age": 23,
+                "votes": 2,
+                "gender": "masculine",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000091",
+                "name": "Natália Andrade",
+                "age": 56,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "20"
+              }
+            ],
+            "serial_number": "AAA014"
+          }
+        ]
+      },
+      {
+        "polling_station": "Local de Voto Cajueiro",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000076",
+                "name": "André Vieira",
+                "age": 23,
+                "votes": 2,
+                "gender": "masculine",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000091",
+                "name": "Natália Andrade",
+                "age": 56,
+                "votes": 3,
+                "gender": "feminine",
+                "party": "20"
+              }
+            ],
+            "serial_number": "AAA013"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "polling_stations": [
+      {
+        "polling_station": "Local de Voto Andorinha",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000094",
+                "name": "Igor Dantas",
+                "age": 24,
+                "votes": 2,
+                "gender": "masculine",
+                "party": "20"
+              },
+              {
+                "cpf_number": "00000000077",
+                "name": "Beatriz Neves",
+                "age": 49,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA016"
+          }
+        ]
+      },
+      {
+        "polling_station": "Centro de Votação Pedra do Reino",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000094",
+                "name": "Igor Dantas",
+                "age": 24,
+                "votes": 1,
+                "gender": "masculine",
+                "party": "20"
+              },
+              {
+                "cpf_number": "00000000077",
+                "name": "Beatriz Neves",
+                "age": 49,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA015"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "polling_stations": [
+      {
+        "polling_station": "Centro de Votação Colibri",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000079",
+                "name": "Laura Freitas",
+                "age": 50,
+                "votes": 1,
+                "gender": "feminine",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000032",
+                "name": "Sandra Moraes",
+                "age": 41,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA018"
+          }
+        ]
+      },
+      {
+        "polling_station": "Estação de Voto Jatobá",
+        "machines": [
+          {
+            "candidates": [
+              {
+                "cpf_number": "00000000079",
+                "name": "Laura Freitas",
+                "age": 50,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "30"
+              },
+              {
+                "cpf_number": "00000000032",
+                "name": "Sandra Moraes",
+                "age": 41,
+                "votes": 2,
+                "gender": "feminine",
+                "party": "10"
+              }
+            ],
+            "serial_number": "AAA017"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,364 @@
+[
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "polling_station": "Local de Voto Sabiá-do-Campo",
+    "attended": 6,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 3,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA003"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "polling_station": "Centro de Votação Mangueira",
+    "attended": 7,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 1,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA002"
+      },
+      {
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "30"
+          },
+          {
+            "votes": 1,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA001"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "polling_station": "Centro de Votação Arara-Azul",
+    "attended": 7,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 3,
+            "party": "30"
+          },
+          {
+            "votes": 3,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA006"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "polling_station": "Estação de Voto Cedro",
+    "attended": 5,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "30"
+          },
+          {
+            "votes": 1,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA005"
+      },
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 1,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA004"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "polling_station": "Estação de Voto Canário",
+    "attended": 2,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "30"
+          },
+          {
+            "votes": 1,
+            "party": "20"
+          }
+        ],
+        "serial_number": "AAA008"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "polling_station": "Local de Voto Pau-Brasil",
+    "attended": 6,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 3,
+            "party": "20"
+          }
+        ],
+        "serial_number": "AAA007"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "polling_station": "Local de Voto Gralha-Azul",
+    "attended": 5,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 3,
+            "party": "20"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA010"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "polling_station": "Centro de Votação Ipê-Roxo",
+    "attended": 6,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "20"
+          },
+          {
+            "votes": 3,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA009"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "polling_station": "Centro de Votação Sereia",
+    "attended": 6,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 3,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA012"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "polling_station": "Estação de Voto Farol da Barra",
+    "attended": 4,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA011"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "polling_station": "Estação de Voto Beija-Flor-de-Papo-Branco",
+    "attended": 4,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "20"
+          }
+        ],
+        "serial_number": "AAA014"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "polling_station": "Local de Voto Cajueiro",
+    "attended": 6,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 3,
+            "party": "20"
+          }
+        ],
+        "serial_number": "AAA013"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "polling_station": "Local de Voto Andorinha",
+    "attended": 5,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "20"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA016"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "polling_station": "Centro de Votação Pedra do Reino",
+    "attended": 3,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "20"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA015"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "polling_station": "Centro de Votação Colibri",
+    "attended": 3,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 1,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA018"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "polling_station": "Estação de Voto Jatobá",
+    "attended": 4,
+    "machines": [
+      {
+        "candidates": [
+          {
+            "votes": 2,
+            "party": "30"
+          },
+          {
+            "votes": 2,
+            "party": "10"
+          }
+        ],
+        "serial_number": "AAA017"
+      }
+    ]
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "state": "Bahia",
+    "city": "Camaçari",
+    "cities_of_birth": [
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Feira de Santana"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Belo Horizonte"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Contagem"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Uberlândia"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Bahia",
+        "city": "Salvador"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Juiz de Fora"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Feira de Santana",
+    "cities_of_birth": [
+      {
+        "citizen_count": 1,
+        "state": "Bahia",
+        "city": "Salvador"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Vitória da Conquista"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Bahia",
+        "city": "Camaçari"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Feira de Santana"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Contagem"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Belo Horizonte"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Juiz de Fora"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Salvador",
+    "cities_of_birth": [
+      {
+        "citizen_count": 3,
+        "state": "Bahia",
+        "city": "Camaçari"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Juiz de Fora"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Bahia",
+        "city": "Vitória da Conquista"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Contagem"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Salvador"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Belo Horizonte"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Uberlândia"
+      }
+    ]
+  },
+  {
+    "state": "Bahia",
+    "city": "Vitória da Conquista",
+    "cities_of_birth": [
+      {
+        "citizen_count": 1,
+        "state": "Bahia",
+        "city": "Feira de Santana"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Contagem"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Bahia",
+        "city": "Vitória da Conquista"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Uberlândia"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Bahia",
+        "city": "Salvador"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Bahia",
+        "city": "Camaçari"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "cities_of_birth": [
+      {
+        "citizen_count": 4,
+        "state": "Minas Gerais",
+        "city": "Contagem"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Bahia",
+        "city": "Vitória da Conquista"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Bahia",
+        "city": "Feira de Santana"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Camaçari"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Uberlândia"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Belo Horizonte"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Contagem",
+    "cities_of_birth": [
+      {
+        "citizen_count": 1,
+        "state": "Bahia",
+        "city": "Feira de Santana"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Belo Horizonte"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Contagem"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Vitória da Conquista"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Uberlândia"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Salvador"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Minas Gerais",
+        "city": "Juiz de Fora"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Juiz de Fora",
+    "cities_of_birth": [
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Vitória da Conquista"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Bahia",
+        "city": "Camaçari"
+      },
+      {
+        "citizen_count": 4,
+        "state": "Minas Gerais",
+        "city": "Contagem"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Uberlândia"
+      },
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Salvador"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Juiz de Fora"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Belo Horizonte"
+      }
+    ]
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Uberlândia",
+    "cities_of_birth": [
+      {
+        "citizen_count": 2,
+        "state": "Bahia",
+        "city": "Camaçari"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Minas Gerais",
+        "city": "Juiz de Fora"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Minas Gerais",
+        "city": "Contagem"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Minas Gerais",
+        "city": "Uberlândia"
+      },
+      {
+        "citizen_count": 3,
+        "state": "Minas Gerais",
+        "city": "Belo Horizonte"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Bahia",
+        "city": "Vitória da Conquista"
+      },
+      {
+        "citizen_count": 1,
+        "state": "Bahia",
+        "city": "Salvador"
+      }
+    ]
+  }
+]
