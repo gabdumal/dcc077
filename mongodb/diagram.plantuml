@@ -1,0 +1,73 @@
+@startuml diagram
+
+hide empty members
+left to right direction
+
+class State as "state" {
+  string name
+}
+State +-- "0..*" City: cities
+
+class City as "city" << (I,white) >> {
+    string name
+}
+City +-- "0..*" PollingStation : polling_stations
+
+class PollingStation as "polling_station" << (I,white) >> {
+    string name
+}
+PollingStation +-- "0..*" Use : uses
+
+
+class Citizen as "citizen" {
+    string name
+    string cpf_number
+    Gender gender
+    date birth_date
+}
+Citizen "0..*" --> "1" City: born_in
+Citizen "0..*" --> "1" PollingStation: registered_in
+Citizen +-- "0..*" Attendance : attended_to
+Citizen +-- "0..1" Candidate : candidate
+
+class Attendance as "attended_to" << (I,white) >> {
+    datetime timestamp
+
+}
+Attendance "0..*" --> "1" PollingStation: polling_station
+
+class Candidate as "candidate" << (I,white) >> {
+    string party
+}
+
+class Use as "use" << (I,white) >> {
+    datetime start_time
+    datetime end_time
+    Status status
+}
+Use "0..*" --> "1" Machine : machine
+
+class Machine as "machine" {
+    string serial_number
+}
+Machine +-- "0..*" Cast : casts
+
+class Cast as "cast" << (I,white) >> {
+    int votes
+}
+Cast "0..*" --> "1" Citizen : candidate
+
+enum Status{
+    active
+    broken
+}
+
+enum Gender{
+    masculine
+    feminine
+    neutral
+}
+
+
+
+@enduml

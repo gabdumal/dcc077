@@ -19,17 +19,26 @@ Em ambos os casos, o modelo representa um sistema eleitoral em que:
 - **Cidadãos** nascem em **Cidades**, estão registrados em **Seções Eleitorais**, e podem ser **Candidatos**.
 - **Candidatos** recebem **Votos**.
 
-### Diagramas de Modelagem
-
-- **Neo4j**: [Diagrama Neo4j](http://localhost:3000/neo4j.jpg)
-- **MongoDB**: [Diagrama MongoDB](http://localhost:3000/mongodb.jpg)
-
 ### Implementação dos Modelos
 
-Com a modelagem finalizada, nossa abordagem seguiu com a definição dos modelos de dados em arquivos específicos para cada banco:
+Com a modelagem finalizada, nossa abordagem seguiu com a definição dos modelos de dados em arquivos específicos para cada banco.
 
-- **Neo4j**: Arquivos `.cypher`
-- **MongoDB**: Arquivos `.bson`
+- [**Neo4j**](/neo4j): Arquivos `.cypher`
+- [**MongoDB**](/mongodb/): Arquivos `.mongodb.js`
+
+### Diagramas de Modelagem
+
+Um diagrama de entidade-relacionamento tradicional representa a modelagem dos dados.
+
+![Diagrama entidade-relacionamento](/diagram.png)
+
+#### Neo4j
+
+![Diagrama em grafo](/neo4j/diagram.png)
+
+#### MongoDB
+
+![Diagrama de coleções](/mongodb/diagram.png)
 
 ### Inserção de Dados
 
@@ -41,15 +50,19 @@ Após alguns testes, identificamos inconsistências no modelo inicial e realizam
 
 ### Expansão de Dados com IA Generativa
 
-Para criar consultas interessantes e aderentes ao contexto de uma eleição, utilizamos **IA generativa** para expandir o volume de dados fictícios de cidadãos e seus votos. Foram simulados **100 cidadãos**, permitindo a obtenção de estatísticas mais representativas.
+Para criar consultas interessantes e aderentes ao contexto de uma eleição, utilizamos **IA generativa** para expandir o volume de dados fictícios de cidadãos e seus votos. Foram simulados **100 cidadãos** segundo critérios determinados, permitindo a obtenção de estatísticas mais representativas.
 
 ### Alimentação dos Bancos de Dados
 
-Desenvolvemos um programa em **Python** responsável pela leitura sequencial dos arquivos de dados (`.cypher` para Neo4j e `.bson` para MongoDB) para alimentar os bancos.
+Desenvolvemos scripts em **Python** responsáveis pela inserção de dados nos bancos.
+As queries específicas podem ser encontradas nas pastas referentes a cada banco.
+
+- [**Neo4j**](/neo4j): [populate.py](/neo4j/populate.py)
+- [**MongoDB**](/mongodb/): [populate.py](/mongodb/populate.py)
 
 ## Exemplos de Dados Inseridos
 
-### Neo4j
+### [Neo4j](/neo4j/)
 
 #### Criação de Estados
 
@@ -73,6 +86,7 @@ MERGE (c8:City {name: "Camaçari"});
 ```
 
 #### Relacionamento entre cidades e estados
+
 ```bash
 MATCH (s1:State {name: "Minas Gerais"})
 OPTIONAL MATCH (c1:City {name: "Belo Horizonte"})
@@ -151,13 +165,17 @@ db.states.insertMany([
 ]);
 ```
 
-
 ## Queries
-> Os resultados das queries foram exportados em formato `.json` e entregues junto a este relatório.
+
+Os arquivos de queries foram desenvolvidos para cada banco de dados e podem ser encontrados nas pastas referentes a cada um.
+
+Os resultados das queries foram exportados em formato `.json` e entregues junto a este relatório.
+Eles podem ser encontrados na seguinte [pasta](/queries/).
 
 ### Neo4j
 
 #### 1 - Candidatos registrados em cada cidade e suas informações
+
 ```bash
 MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-[:REGISTERED_IN]-(cz:Citizen)<-[:IS]-(cd:Candidate)
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz:Citizen)
@@ -166,6 +184,7 @@ RETURN s.name AS state, c.name AS city, candidates;
 ```
 
 #### 2 - Cidadãos registrados em cada cidade e sua participação, se compareceram
+
 ```bash
 MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-[:REGISTERED_IN]-(cz:Citizen)
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz)
@@ -176,6 +195,7 @@ RETURN s.name AS state, c.name AS city, citizens;
 ```
 
 #### 2.1 - Cidadãos registrados em cada seção eleitoral e sua participação, se compareceram
+
 ```bash
 MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-[:REGISTERED_IN]-(cz:Citizen)
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz)
@@ -186,6 +206,7 @@ RETURN s.name AS state, c.name AS city, p.name AS polling_station, citizens;
 ```
 
 #### 3 - Contar quantos cidadãos se registraram e compareceram em cada seção eleitoral em cada cidade
+
 ```bash
 MATCH (s:State)-[:CONTAINS]->(c:City)-[:CONTAINS]->(p:PollingStation)<-[:REGISTERED_IN]-(cz:Citizen)
 WITH s, c, p, COUNT(cz) AS registered
@@ -198,6 +219,7 @@ RETURN s.name AS state, c.name AS city, polling_stations, total_registered, tota
 ```
 
 #### 4 - Contar quantos votos cada candidato recebeu em cada máquina
+
 ```bash
 MATCH (cz:Citizen)<-[:IS]-(cd:Candidate)<-[:CASTS]-(m:Machine)<-[:USES]-(p:PollingStation)<-[:CONTAINS]-(c:City)<-[:CONTAINS]-(s:State)
 WITH s, c, p, m, cd, cz, COUNT(cz) AS votes
@@ -208,6 +230,7 @@ RETURN s.name AS state, c.name AS city, polling_stations;
 ```
 
 #### 4.1 Contar quantos votos cada candidato recebeu em cada máquina e o número total de cidadãos que compareceram
+
 ```bash
 MATCH (cd:Candidate)<-[:CASTS]-(m:Machine)<-[:USES]-(p:PollingStation)<-[:CONTAINS]-(c:City)<-[:CONTAINS]-(s:State)
 WITH s, c, p, m, cd, COUNT(cd) AS votes
@@ -219,6 +242,7 @@ RETURN s.name AS state, c.name AS city, p.name AS polling_station, attended, mac
 ```
 
 #### 5 - Contar quantos votos cada candidato recebeu em cada seção eleitoral e o número total de cidadãos que compareceram e se registraram
+
 ```bash
 MATCH (cd:Candidate)<-[v:CASTS]-(m:Machine)<-[:USES]-(p:PollingStation)<-[:CONTAINS]-(c:City)<-[:CONTAINS]-(s:State)
 WITH s, c, p, cd, COUNT(v) AS votes
@@ -233,6 +257,7 @@ RETURN s.name AS state, c.name AS city, polling_stations;
 ```
 
 #### 5.1 - Contar quantos votos cada candidato recebeu em cada cidade e o número total de cidadãos que compareceram
+
 ```bash
 MATCH (cd:Candidate)<-[v:CASTS]-(m:Machine)<-[:USES]-(p:PollingStation)<-[:CONTAINS]-(c:City)<-[:CONTAINS]-(s:State)
 WITH s, c, cd, COUNT(v) AS votes
@@ -246,6 +271,7 @@ RETURN s.name AS state, c.name AS city, candidates, valid_votes, blank_votes, re
 ```
 
 #### 6 - Obter estatísticas sobre os votos em cada cidade
+
 ```bash
 MATCH (cd:Candidate)<-[v:CASTS]-(m:Machine)<-[:USES]-(p:PollingStation)<-[:CONTAINS]-(c:City)<-[:CONTAINS]-(s:State)
 WITH s, c, cd, COUNT(v) AS votes
@@ -260,6 +286,7 @@ RETURN s.name AS state, c.name AS city, candidates_with_percentages, blank_votes
 ```
 
 #### 7 - Obter estatísticas sobre o gênero dos candidatos
+
 ```bash
 WITH ["masculine", "feminine", "neutral"] AS genders
 UNWIND genders AS gender
@@ -269,6 +296,7 @@ RETURN gender, candidate_count ORDER BY gender;
 ```
 
 #### 7.1 - Obter estatísticas sobre a idade dos candidatos
+
 ```bash
 MATCH (cz:Citizen)<-[:IS]-(cd:Candidate)
 WITH cd, date().year - date(cz.birth_date).year AS age
@@ -277,12 +305,14 @@ RETURN age_ranges, COUNT(cd) AS candidate_count ORDER BY age_ranges;
 ```
 
 #### 7.2 - Obter estatísticas sobre a cidade de nascimento dos candidatos
+
 ```bash
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz:Citizen)<-[:IS]-(cd:Candidate)
 RETURN bs.name AS state, bc.name AS city, COUNT(cd) AS candidate_count ORDER BY state, city;
 ```
 
 #### 8 - Obter estatísticas sobre o gênero dos cidadãos por cidade em que estão registrados
+
 ```bash
 MATCH (s:State)-[:CONTAINS]->(c:City)
 WITH s, c, ["masculine", "feminine", "neutral"] AS genders
@@ -295,6 +325,7 @@ RETURN s.name AS state, c.name AS city, genders ORDER BY state, city;
 ```
 
 #### 8.1. Obter estatísticas sobre a idade dos cidadãos por cidade em que estão registrados
+
 ```bash
 MATCH (cz:Citizen)-[:REGISTERED_IN]->(p:PollingStation)<-[:CONTAINS]-(c:City)<-[:CONTAINS]-(s:State)
 WHERE cz.birth_date IS NOT NULL
@@ -306,6 +337,7 @@ RETURN s.name AS state, c.name AS city, age_ranges ORDER BY state, city;
 ```
 
 #### 8.2 - Obter estatísticas sobre a cidade de nascimento dos cidadãos por cidade em que estão registrados
+
 ```bash
 MATCH (cz:Citizen)-[:REGISTERED_IN]->(p:PollingStation)<-[:CONTAINS]-(c:City)<-[:CONTAINS]-(s:State)
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz:Citizen)
@@ -315,6 +347,7 @@ RETURN s.name AS state, c.name AS city, cities_of_birth ORDER BY state, city;
 ```
 
 #### 9 - Obter a idade média dos cidadãos por cidade em que estão registrados
+
 ```bash
 MATCH (cz:Citizen)-[:REGISTERED_IN]->(p:PollingStation)<-[:CONTAINS]-(c:City)<-[:CONTAINS]-(s:State)
 WHERE cz.birth_date IS NOT NULL
@@ -324,6 +357,7 @@ RETURN s.name AS state, c.name AS city, average_age ORDER BY state, city;
 ```
 
 #### 9.1. Obter a idade média dos cidadãos por cidade em que nasceram
+
 ```bash
 MATCH (bs:State)-[:CONTAINS]->(bc:City)<-[:BORN_IN]-(cz:Citizen)
 WHERE cz.birth_date IS NOT NULL
@@ -333,6 +367,7 @@ RETURN bs.name AS state, bc.name AS city, average_age ORDER BY state, city;
 ```
 
 #### 10 - Obter quantos candidatos de cada gênero estão registrados em cada partido
+
 ```bash
 MATCH (cd:Candidate)
 WHERE cd.party IS NOT NULL
@@ -346,6 +381,7 @@ RETURN party, genders ORDER BY party;
 ```
 
 #### 10.1 - Obter quantos candidatos de cada faixa etária estão registrados em cada partido
+
 ```bash
 MATCH (cd:Candidate)-[:IS]->(cz:Citizen)
 WHERE cd.party IS NOT NULL AND cz.birth_date IS NOT NULL
@@ -356,7 +392,7 @@ WITH party, collect({age_range: age_range, candidate_count: candidate_count}) AS
 RETURN party, age_ranges, total_candidates ORDER BY party;
 ```
 
-### MongoDB
+### [MongoDB](/mongodb/)
 
 As quatro primeiras queries - numeradas de 1 até 3 - foram executadas também no banco MongoDB. Entretanto, não é plausível adicioná-las a este relatório devido ao número de linhas necessário. Desta forma, as consultas foram separadas em arquivos **JavaScript** e compactadas junto ao relatório. A complexidade destas consultas neste tipo de banco é discutida em nossa conclusão.
 
@@ -367,6 +403,3 @@ Considerando o domínio de aplicação deste trabalho, o banco de dados baseado 
 Por outro lado, as consultas realizadas no banco de dados orientado a documentos tornaram-se excessivamente longas e de difícil leitura. Embora tenham apresentado tempos de resposta curtos devido ao pequeno volume de dados utilizados nos testes, sua complexidade estrutural indica que essa abordagem não é a mais adequada para este contexto. No entanto, é possível considerar seu uso em partes específicas do processo eleitoral, como na busca por substrings em relatórios.
 
 Além disso, embora o MongoDB permita a modelagem baseada em referências – o que poderia aproximá-lo de um modelo relacional –, essa abordagem foi evitada no projeto. O objetivo era explorar e contrastar diferentes paradigmas de bancos de dados **NoSQL**, em vez de replicar características do modelo relacional.
-
-
-
